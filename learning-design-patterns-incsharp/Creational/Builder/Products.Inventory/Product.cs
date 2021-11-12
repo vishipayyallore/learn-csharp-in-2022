@@ -2,7 +2,7 @@
 {
     internal class Product
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         public string Name { get; set; } = string.Empty;
 
@@ -14,7 +14,7 @@
 
         public string Code { get; set; } = string.Empty;
 
-        public DateTime ReleaseDate { get; set; }
+        public DateTime ReleaseDate { get; set; } = DateTime.Now;
 
         public string ImageUrl { get; set; } = string.Empty;
 
