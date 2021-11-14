@@ -1,8 +1,8 @@
 ﻿namespace Products.Inventory
 {
-    internal class Product
+    public class Product
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         public string Name { get; set; } = string.Empty;
 
@@ -12,13 +12,21 @@
 
         public int Quantity { get; set; }
 
+        public bool IsAvailable { get; set; }
+
         public string Code { get; set; } = string.Empty;
 
         public DateTime ReleaseDate { get; set; } = DateTime.Now;
 
+        public decimal Rating { get; set; }
+
         public string ImageUrl { get; set; } = string.Empty;
 
-        public decimal StarRating { get; set; }
+        public override string ToString()
+        {
+            return $"{Id} - {Name} - {Description} - {Price} - {Quantity} - {IsAvailable} - {Code} - {ReleaseDate} - {Rating} - {ImageUrl}";
+        }
+
     }
 
 }
