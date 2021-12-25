@@ -18,17 +18,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutVariablesDemo.Tests", "C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QuickPoc", "QuickPoc", "{849AD03D-9E97-4BCE-8B36-9E18B254496B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickPoc", "QuickPoc\QuickPoc\QuickPoc.csproj", "{F48D02A6-3D57-4BF0-84A0-1E36E2046DC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickPoc", "QuickPoc\QuickPoc\QuickPoc.csproj", "{F48D02A6-3D57-4BF0-84A0-1E36E2046DC3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{B2EE25DD-1C5E-4B44-812F-C0747DE82075}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameGenerator.Lib", "Common\NameGenerator.Lib\NameGenerator.Lib.csproj", "{9E882B01-841B-4083-B05F-C813D53A3C0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NameGenerator.Lib", "Common\NameGenerator.Lib\NameGenerator.Lib.csproj", "{9E882B01-841B-4083-B05F-C813D53A3C0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameGenerator.Tests", "Common\NameGenerator.Tests\NameGenerator.Tests.csproj", "{FE91667A-9EA2-4B87-A271-1A51D0E20842}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NameGenerator.Tests", "Common\NameGenerator.Tests\NameGenerator.Tests.csproj", "{FE91667A-9EA2-4B87-A271-1A51D0E20842}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderFooter.Lib", "Common\HeaderFooter.Lib\HeaderFooter.Lib.csproj", "{911030F1-0956-4B52-9B61-C1E912CE3320}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeaderFooter.Lib", "Common\HeaderFooter.Lib\HeaderFooter.Lib.csproj", "{911030F1-0956-4B52-9B61-C1E912CE3320}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderFooter.Tests", "Common\HeaderFooter.Tests\HeaderFooter.Tests.csproj", "{14F29013-78D9-416E-AA71-E19BA7F1E380}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeaderFooter.Tests", "Common\HeaderFooter.Tests\HeaderFooter.Tests.csproj", "{14F29013-78D9-416E-AA71-E19BA7F1E380}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpV2Demos", "CSharpV2Demos", "{0E25ED87-32F2-4355-828C-65E8C2FD094E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayDemo.Lib", "CSharpV2Demos\ArrayDemo.Lib\ArrayDemo.Lib.csproj", "{0C8D7A66-613F-467D-A58B-CBB9D676C25C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayDemo.Run", "CSharpV2Demos\ArrayDemo.Run\ArrayDemo.Run.csproj", "{B64678EE-3493-4A44-9047-B4870C6FB70B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -68,6 +74,14 @@ Global
 		{14F29013-78D9-416E-AA71-E19BA7F1E380}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14F29013-78D9-416E-AA71-E19BA7F1E380}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14F29013-78D9-416E-AA71-E19BA7F1E380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C8D7A66-613F-467D-A58B-CBB9D676C25C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C8D7A66-613F-467D-A58B-CBB9D676C25C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C8D7A66-613F-467D-A58B-CBB9D676C25C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C8D7A66-613F-467D-A58B-CBB9D676C25C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B64678EE-3493-4A44-9047-B4870C6FB70B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64678EE-3493-4A44-9047-B4870C6FB70B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64678EE-3493-4A44-9047-B4870C6FB70B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64678EE-3493-4A44-9047-B4870C6FB70B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +95,8 @@ Global
 		{FE91667A-9EA2-4B87-A271-1A51D0E20842} = {B2EE25DD-1C5E-4B44-812F-C0747DE82075}
 		{911030F1-0956-4B52-9B61-C1E912CE3320} = {B2EE25DD-1C5E-4B44-812F-C0747DE82075}
 		{14F29013-78D9-416E-AA71-E19BA7F1E380} = {B2EE25DD-1C5E-4B44-812F-C0747DE82075}
+		{0C8D7A66-613F-467D-A58B-CBB9D676C25C} = {0E25ED87-32F2-4355-828C-65E8C2FD094E}
+		{B64678EE-3493-4A44-9047-B4870C6FB70B} = {0E25ED87-32F2-4355-828C-65E8C2FD094E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F1F0DF3-E1D8-4672-B1A0-B74E42940BC1}

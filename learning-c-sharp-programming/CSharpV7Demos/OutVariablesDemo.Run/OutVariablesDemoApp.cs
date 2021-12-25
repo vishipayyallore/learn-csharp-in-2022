@@ -1,9 +1,4 @@
 ﻿using OutVariablesDemo.Lib;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OutVariablesDemo.Run
 {
@@ -24,7 +19,7 @@ namespace OutVariablesDemo.Run
 
             _integerParser.IntTryParseV1(value1);
             _integerParser.IntTryParseV1(value2);
-            
+
             _integerParser.IntTryParseV2(value1);
             _integerParser.IntTryParseV2(value2);
         }
