@@ -11,11 +11,11 @@ namespace OutVariablesDemo.Lib
             int output;
             if (int.TryParse(input, out output))
             {
-                WriteLine($"Input: {input}, Output: {output}");
+                WriteLine($"Input: {input.GetType()} {input}, Output: {output.GetType()} {output}");
             }
             else
             {
-                WriteLine($"Could not parse {input}, Output: {output}");
+                WriteLine($"Could not Parse :: Input: {input.GetType()} {input}, Output: {output.GetType()} {output}");
             }
         }
 
@@ -23,11 +23,11 @@ namespace OutVariablesDemo.Lib
         {
             if (int.TryParse(input, out var output))
             {
-                WriteLine($"Input: {input}, Output: {output}");
+                WriteLine($"Input: {input.GetType()} {input}, Output: {output.GetType()} {output}");
             }
             else
             {
-                WriteLine($"Could not parse {input}, Output: {output}");
+                WriteLine($"Could not Parse :: Input: {input.GetType()} {input}, Output: {output.GetType()} {output}");
             }
         }
 
