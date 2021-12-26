@@ -12,6 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\NameGenerator.Lib\NameGenerator.Lib.csproj" />
+    <ProjectReference Include="..\..\CSharpV2Demos\ArrayDemo.Lib\ArrayDemo.Lib.csproj" />
     <ProjectReference Include="..\..\CSharpV7Demos\OutVariablesDemo.Lib\OutVariablesDemo.Lib.csproj" />
   </ItemGroup>
 

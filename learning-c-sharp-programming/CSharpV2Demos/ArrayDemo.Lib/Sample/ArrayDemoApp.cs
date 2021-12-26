@@ -1,6 +1,6 @@
 ﻿using ArrayDemo.Lib.Interfaces;
 
-namespace ArrayDemo.Run
+namespace ArrayDemo.Lib.Sample
 {
     public class ArrayDemoApp
     {
