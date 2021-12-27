@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using OutVariablesDemo.Lib;
-using OutVariablesDemo.Lib.Sample;
+using V7Demos.Run.Apps;
 
-namespace Demos.Run.Dependencies
+namespace V7Demos.Run.Dependencies
 {
     public static class OutVariablesDemoDependencies
     {

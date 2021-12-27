@@ -1,4 +1,6 @@
-﻿namespace OutVariablesDemo.Lib.Sample
+﻿using OutVariablesDemo.Lib;
+
+namespace V7Demos.Run.Apps
 {
 
     public class OutVariablesDemoApp

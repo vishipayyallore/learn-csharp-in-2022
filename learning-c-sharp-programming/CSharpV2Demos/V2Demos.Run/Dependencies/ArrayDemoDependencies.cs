@@ -1,10 +1,10 @@
 ﻿using ArrayDemo.Lib;
 using ArrayDemo.Lib.Interfaces;
-using ArrayDemo.Lib.Sample;
 using Microsoft.Extensions.DependencyInjection;
 using NameGenerator.Lib.Interfaces;
+using V2Demos.Run.Apps;
 
-namespace Demos.Run.Dependencies
+namespace V2Demos.Run.Dependencies
 {
     public static class ArrayDemoDependencies
     {
