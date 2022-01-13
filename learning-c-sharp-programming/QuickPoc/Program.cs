@@ -3,9 +3,9 @@
 using static System.Console;
 
 AssemblyTypesAndMethodsDemo.ShowDemo();
+BasicDataTypesRangeDemo.ShowDemo();
 
 NamesWithArrayList.ShowDemo();
-
-BasicDataTypesRangeDemo.ShowDemo();
+NamesWithStringCollection.ShowDemo();
 
 WriteLine("\n\n Press any key ...");
