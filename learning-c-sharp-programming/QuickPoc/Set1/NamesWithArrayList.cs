@@ -2,7 +2,7 @@
 
 using static System.Console;
 
-namespace QuickPoc
+namespace QuickPoc.Set1
 {
     public class NamesWithArrayList
     {

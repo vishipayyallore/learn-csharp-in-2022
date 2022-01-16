@@ -1,6 +1,6 @@
 ﻿using System.Collections.Specialized;
 
-namespace QuickPoc
+namespace QuickPoc.Set1
 {
     public class NamesWithStringCollection
     {
