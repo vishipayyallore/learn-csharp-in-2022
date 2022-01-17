@@ -7,5 +7,6 @@ BasicDataTypesRangeDemo.ShowDemo();
 
 NamesWithArrayList.ShowDemo();
 NamesWithStringCollection.ShowDemo();
+NamesWithList.ShowDemo();
 
 WriteLine("\n\n Press any key ...");

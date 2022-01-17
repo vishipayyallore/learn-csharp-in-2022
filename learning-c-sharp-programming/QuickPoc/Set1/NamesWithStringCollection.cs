@@ -14,17 +14,19 @@ namespace QuickPoc.Set1
         {
             StringCollection names = new();
 
-            names.Add("Gamma");
-            names.Add("Vlissides");
-            names.Add("Johnson");
-            names.Add("Helm");
+            names.Add("Name 1");
+            names.Add("Name 2");
+            names.Add("Name 3");
+            names.Add("Name 4");
 
             return names;
         }
 
         private static void PrintNames(StringCollection names)
         {
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
             foreach (string name in names)
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
             {
                 Console.WriteLine(name);
             }
