@@ -18,7 +18,7 @@ static ServiceProvider ConfigureServices()
     // create service collection
     IServiceCollection services = new ServiceCollection();
 
-    services.ConfigureArrayDemoServices();
+    services.ConfigureServices();
 
     return services.BuildServiceProvider();
 }

@@ -9,7 +9,7 @@ namespace V2Demos.Run.Dependencies
     public static class ArrayDemoDependencies
     {
 
-        public static IServiceCollection ConfigureArrayDemoServices(this IServiceCollection services)
+        public static IServiceCollection ConfigureServices(this IServiceCollection services)
         {
             services.AddTransient<INameGenerator, NameGenerator.Lib.NameGenerator>();
             services.AddTransient<INamesArray, NamesArray>();
