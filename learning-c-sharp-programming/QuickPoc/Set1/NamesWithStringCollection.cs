@@ -1,4 +1,5 @@
-﻿using NameGenerator.Lib.Interfaces;
+﻿using NameGenerator.Lib;
+using NameGenerator.Lib.Interfaces;
 using System.Collections.Specialized;
 
 namespace QuickPoc.Set1
