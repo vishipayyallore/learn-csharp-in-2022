@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using NameGenerator.Lib;
+using NameGenerator.Lib.Interfaces;
+using System.Collections;
 
 using static System.Console;
 
@@ -6,6 +8,9 @@ namespace QuickPoc.Set1
 {
     public class NamesWithArrayList
     {
+        // Temporary Fix
+        private static readonly IGenerateName _nameGenerator = new GenerateName();
+
         public static void ShowDemo()
         {
             ArrayList? names = GenerateNames();
@@ -16,10 +21,10 @@ namespace QuickPoc.Set1
         {
             ArrayList? names = new();
 
-            names.Add("Name 1");
-            names.Add("Name 2");
-            names.Add("Name 3");
-            names.Add("Name 4");
+            for (int i = 0; i < 5; i++)
+            {
+                names.Add(_nameGenerator.GetName());
+            }
 
             return names;
         }

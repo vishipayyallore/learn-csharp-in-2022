@@ -4,7 +4,7 @@ using System.Text;
 namespace NameGenerator.Lib
 {
 
-    public class NameGenerator : INameGenerator
+    public class GenerateName : IGenerateName
     {
 
         private static readonly string[] _consonants = { "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "l", "n", "p", "q", "r", "s", "sh", "zh", "t", "v", "w", "x" };
@@ -13,7 +13,7 @@ namespace NameGenerator.Lib
 
         static readonly Random _random = new();
 
-        public string GenerateName(int length)
+        public string GetName(int length = 10)
         {
             StringBuilder name = new(length);
             int index = 2;

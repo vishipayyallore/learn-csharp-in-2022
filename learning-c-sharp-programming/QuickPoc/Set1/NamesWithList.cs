@@ -1,7 +1,13 @@
-﻿namespace QuickPoc.Set1
+﻿using NameGenerator.Lib;
+using NameGenerator.Lib.Interfaces;
+
+namespace QuickPoc.Set1
 {
     public class NamesWithList
     {
+
+        // Temporary Fix
+        private static readonly IGenerateName _nameGenerator = new GenerateName();
 
         public static void ShowDemo()
         {
@@ -12,22 +18,22 @@
 
         private static List<string> GenerateNames()
         {
-            List<string> names = new List<string>();
+            List<string> names = new();
 
-            names.Add("Name 1");
-            names.Add("Name 2");
-            names.Add("Name 3");
-            names.Add("Name 4");
+            for (int i = 0; i < 5; i++)
+            {
+                names.Add(_nameGenerator.GetName());
+            }
 
             return names;
         }
 
         static void PrintNames(List<string> names)
         {
-            foreach (string name in names)
+            names.ForEach(name =>
             {
                 Console.WriteLine(name);
-            }
+            });
         }
 
     }

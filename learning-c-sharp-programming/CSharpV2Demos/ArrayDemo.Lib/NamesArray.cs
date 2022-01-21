@@ -6,9 +6,9 @@ namespace ArrayDemo.Lib
 
     public class NamesArray : INamesArray
     {
-        private readonly INameGenerator _nameGenerator;
+        private readonly IGenerateName _nameGenerator;
 
-        public NamesArray(INameGenerator nameGenerator)
+        public NamesArray(IGenerateName nameGenerator)
         {
             _nameGenerator = nameGenerator ?? throw new ArgumentNullException(nameof(nameGenerator));
         }
@@ -19,7 +19,7 @@ namespace ArrayDemo.Lib
 
             for (int index = 0; index < numberOfNames; index++)
             {
-                names[index] = _nameGenerator.GenerateName(nameLength);
+                names[index] = _nameGenerator.GetName(nameLength);
             }
 
             return names;

@@ -11,7 +11,7 @@ namespace V2Demos.Run.Dependencies
 
         public static IServiceCollection ConfigureServices(this IServiceCollection services)
         {
-            services.AddTransient<INameGenerator, NameGenerator.Lib.NameGenerator>();
+            services.AddTransient<IGenerateName, NameGenerator.Lib.GenerateName>();
             services.AddTransient<INamesArray, NamesArray>();
             services.AddTransient<IPrintHelper, PrintHelper>();
 
