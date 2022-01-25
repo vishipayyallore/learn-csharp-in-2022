@@ -30,6 +30,8 @@ header.DisplayHeader('=', "TypeOf() Demo");
 TypeOfDemo.ShowDemo();
 footer.DisplayFooter('-');
 
+NullableBoxingDemo.ShowDemo();
+
 // Test Run
 //IGenerateName _nameGenerator = new GenerateName();
 //for (int i = 0; i < 1_00_00_000; i++)
