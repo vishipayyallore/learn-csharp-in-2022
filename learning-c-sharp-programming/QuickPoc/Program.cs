@@ -15,19 +15,27 @@ NamesWithArrayList.ShowDemo();
 footer.DisplayFooter('-');
 
 header.DisplayHeader('=', "Names With String Collection");
+ForegroundColor = ConsoleColor.Cyan;
 NamesWithStringCollection.ShowDemo();
+ForegroundColor = ConsoleColor.White;
 footer.DisplayFooter('-');
 
 header.DisplayHeader('=', "Names With List");
+ForegroundColor = ConsoleColor.Cyan;
 NamesWithList.ShowDemo();
+ForegroundColor = ConsoleColor.White;
 footer.DisplayFooter('-');
 
 header.DisplayHeader('=', "Generic Method Demo");
+ForegroundColor = ConsoleColor.Cyan;
 GenericMethodDemo.ShowDemo();
+ForegroundColor = ConsoleColor.White;
 footer.DisplayFooter('-');
 
 header.DisplayHeader('=', "TypeOf() Demo");
+ForegroundColor = ConsoleColor.Cyan;
 TypeOfDemo.ShowDemo();
+ForegroundColor = ConsoleColor.White;
 footer.DisplayFooter('-');
 
 NullableBoxingDemo.ShowDemo();

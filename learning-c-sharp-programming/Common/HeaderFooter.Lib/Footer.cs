@@ -10,7 +10,7 @@ namespace HeaderFooter.Lib
 
         public void DisplayFooter(char footer, int length = 100, ConsoleColor foregroundColor = ConsoleColor.Cyan)
         {
-            ForegroundColor = foregroundColor;
+            ForegroundColor = ConsoleColor.Yellow;
 
             WriteLine($"\n{new string(footer, length)}\n");
 
