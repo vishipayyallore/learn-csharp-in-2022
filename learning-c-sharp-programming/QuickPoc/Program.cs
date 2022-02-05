@@ -32,7 +32,7 @@ GenericMethodDemo.ShowDemo();
 ForegroundColor = ConsoleColor.White;
 footer.DisplayFooter('-');
 
-header.DisplayHeader('=', "TypeOf() Demo");
+header.DisplayHeader('=', "TypeOf() Demo", foregroundColor: ConsoleColor.Yellow);
 ForegroundColor = ConsoleColor.Cyan;
 TypeOfDemo.ShowDemo();
 ForegroundColor = ConsoleColor.White;

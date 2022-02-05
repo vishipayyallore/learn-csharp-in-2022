@@ -6,6 +6,8 @@ using static System.Console;
 // Generate a provider
 var serviceProvider = ConfigureServices();
 
+Console.ResetColor();
+
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
 serviceProvider.GetService<ArrayDemoApp>().Run();
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
@@ -18,7 +20,8 @@ static ServiceProvider ConfigureServices()
     // create service collection
     IServiceCollection services = new ServiceCollection();
 
-    services.ConfigureServices();
+    services.ConfigureArrayDemoServices();
+    services.ConfigureHeaderFooterServices();
 
     return services.BuildServiceProvider();
 }

@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\HeaderFooter.Lib\HeaderFooter.Lib.csproj" />
     <ProjectReference Include="..\ArrayDemo.Lib\ArrayDemo.Lib.csproj" />
   </ItemGroup>
 

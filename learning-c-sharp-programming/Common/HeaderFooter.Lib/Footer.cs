@@ -8,7 +8,7 @@ namespace HeaderFooter.Lib
     public class Footer : IFooter
     {
 
-        public void DisplayFooter(char footer, int length = 100, ConsoleColor foregroundColor = ConsoleColor.Cyan)
+        public void DisplayFooter(char footer, int length = 100, ConsoleColor foregroundColor = ConsoleColor.Yellow)
         {
             ForegroundColor = ConsoleColor.Yellow;
 
