@@ -38,7 +38,11 @@ TypeOfDemo.ShowDemo();
 ForegroundColor = ConsoleColor.White;
 footer.DisplayFooter('-');
 
+header.DisplayHeader('=', "Nullable Boxing Demo", foregroundColor: ConsoleColor.Yellow);
+ForegroundColor = ConsoleColor.Cyan;
 NullableBoxingDemo.ShowDemo();
+ResetColor();
+footer.DisplayFooter('-');
 
 // Test Run
 //IGenerateName _nameGenerator = new GenerateName();
