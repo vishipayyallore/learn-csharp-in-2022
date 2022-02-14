@@ -2,7 +2,7 @@
 using System.Reflection;
 using static System.Console;
 
-namespace QuickPoc.Set2
+namespace QuickPoc.Set
 {
     public class AssemblyTypesAndMethodsDemo
     {

@@ -1,6 +1,6 @@
 ﻿using HeaderFooter.Lib;
 using HeaderFooter.Lib.Interfaces;
-using QuickPoc.Set1;
+using QuickPoc.Set;
 using QuickPoc.Set2;
 using static System.Console;
 

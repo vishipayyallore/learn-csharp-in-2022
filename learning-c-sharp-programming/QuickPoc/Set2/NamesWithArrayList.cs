@@ -4,7 +4,7 @@ using System.Collections;
 
 using static System.Console;
 
-namespace QuickPoc.Set1
+namespace QuickPoc.Set2
 {
     public class NamesWithArrayList
     {

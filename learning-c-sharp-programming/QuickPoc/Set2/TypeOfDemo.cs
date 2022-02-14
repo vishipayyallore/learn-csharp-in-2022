@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace QuickPoc.Set1
+namespace QuickPoc.Set2
 {
     public class TypeOfDemo
     {

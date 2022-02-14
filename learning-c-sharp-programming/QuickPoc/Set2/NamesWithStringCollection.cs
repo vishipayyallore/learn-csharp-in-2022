@@ -2,7 +2,7 @@
 using NameGenerator.Lib.Interfaces;
 using System.Collections.Specialized;
 
-namespace QuickPoc.Set1
+namespace QuickPoc.Set2
 {
     public class NamesWithStringCollection
     {

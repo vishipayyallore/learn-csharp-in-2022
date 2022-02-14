@@ -1,7 +1,7 @@
 ﻿using NameGenerator.Lib;
 using NameGenerator.Lib.Interfaces;
 
-namespace QuickPoc.Set1
+namespace QuickPoc.Set2
 {
     public class NamesWithList
     {

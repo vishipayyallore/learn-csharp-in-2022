@@ -1,4 +1,4 @@
-﻿namespace QuickPoc.Set1
+﻿namespace QuickPoc.Set2
 {
 
     public class GenericMethodDemo
@@ -8,7 +8,7 @@
         {
             List<int> numbers = new() { 5, 10, 15, 20, 25 };
 
-            List<int> firstTwo = CopyAtMost<int>(numbers, 2);
+            List<int> firstTwo = CopyAtMost(numbers, 2);
             Console.WriteLine($"List Count: {firstTwo.Count}. Elements: {string.Join(", ", firstTwo)}");
         }
 
