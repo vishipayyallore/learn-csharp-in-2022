@@ -1,11 +1,24 @@
 ﻿using HeaderFooter.Lib;
 using HeaderFooter.Lib.Interfaces;
 using QuickPoc.Set;
+using QuickPoc.Set1;
 using QuickPoc.Set2;
 using static System.Console;
 
 IHeader _header = new Header();
 IFooter _footer = new Footer();
+
+_header.DisplayHeader('=', "Sum of numbers Array V1");
+ForegroundColor = ConsoleColor.Cyan;
+AddNumbersV1.ShowDemo();
+Console.ResetColor();
+_footer.DisplayFooter('-');
+
+_header.DisplayHeader('=', "Sum of numbers Array V2");
+ForegroundColor = ConsoleColor.Cyan;
+AddNumbersV2.ShowDemo();
+Console.ResetColor();
+_footer.DisplayFooter('-');
 
 AssemblyTypesAndMethodsDemo.ShowDemo();
 BasicDataTypesRangeDemo.ShowDemo();
@@ -45,3 +58,4 @@ ResetColor();
 _footer.DisplayFooter('-');
 
 WriteLine("\n\n Press any key ...");
+

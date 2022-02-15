@@ -12,8 +12,4 @@
     <ProjectReference Include="..\Common\NameGenerator.Lib\NameGenerator.Lib.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Set1\" />
-  </ItemGroup>
-
 </Project>
