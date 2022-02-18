@@ -1,15 +1,17 @@
 ﻿using NameGenerator.Lib;
 using NameGenerator.Lib.Interfaces;
+using QuickPoc.Interfaces;
 using System.Collections.Specialized;
 
 namespace QuickPoc.Set2
 {
-    public class NamesWithStringCollection
+
+    public class NamesWithStringCollection : IDemoProgram
     {
         // Temporary Fix
         private static readonly IGenerateName _nameGenerator = new GenerateName();
 
-        public static void ShowDemo()
+        public void ShowDemo()
         {
             StringCollection names = GenerateNames();
             PrintNames(names);

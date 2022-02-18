@@ -1,10 +1,11 @@
-﻿using System.Globalization;
+﻿using QuickPoc.Interfaces;
+using System.Globalization;
 
 namespace QuickPoc.Set2
 {
-    public class TypeOfDemo
+    public class TypeOfDemo : IDemoProgram
     {
-        public static void ShowDemo()
+        public void ShowDemo()
         {
 
             PrintType<decimal>();

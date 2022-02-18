@@ -1,10 +1,12 @@
-﻿namespace QuickPoc.Set2
+﻿using QuickPoc.Interfaces;
+
+namespace QuickPoc.Set2
 {
 
-    public class GenericMethodDemo
+    public class GenericMethodDemo : IDemoProgram
     {
 
-        public static void ShowDemo()
+        public void ShowDemo()
         {
             List<int> numbers = new() { 5, 10, 15, 20, 25 };
 

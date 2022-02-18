@@ -18,6 +18,13 @@ RunDemoProgram(new FindTypes(), "Find Types");
 RunDemoProgram(new AddNumbersV1(), "Sum of numbers Array V1");
 RunDemoProgram(new AddNumbersV2(), "Sum of numbers Array V2");
 
+// Set 2 Group Programs
+RunDemoProgram(new GenericMethodDemo(), "Generic Method Demo");
+RunDemoProgram(new NamesWithArrayList(), "Names With ArrayList");
+RunDemoProgram(new NamesWithList(), "Names With List");
+RunDemoProgram(new NullableBoxingDemo(), "Nullable Boxing Demo");
+RunDemoProgram(new TypeOfDemo(), "TypeOf() Demo");
+
 void RunDemoProgram(IDemoProgram demoProgram, string programTitle = "No Title")
 {
     _header.DisplayHeader('=', programTitle);
@@ -28,42 +35,6 @@ void RunDemoProgram(IDemoProgram demoProgram, string programTitle = "No Title")
 
     _footer.DisplayFooter('-');
 }
-
-
-
-_header.DisplayHeader('=', "Names With ArrayList");
-NamesWithArrayList.ShowDemo();
-_footer.DisplayFooter('-');
-
-_header.DisplayHeader('=', "Names With String Collection");
-ForegroundColor = ConsoleColor.Cyan;
-NamesWithStringCollection.ShowDemo();
-ForegroundColor = ConsoleColor.White;
-_footer.DisplayFooter('-');
-
-_header.DisplayHeader('=', "Names With List");
-ForegroundColor = ConsoleColor.Cyan;
-NamesWithList.ShowDemo();
-ForegroundColor = ConsoleColor.White;
-_footer.DisplayFooter('-');
-
-_header.DisplayHeader('=', "Generic Method Demo");
-ForegroundColor = ConsoleColor.Cyan;
-GenericMethodDemo.ShowDemo();
-ForegroundColor = ConsoleColor.White;
-_footer.DisplayFooter('-');
-
-_header.DisplayHeader('=', "TypeOf() Demo", foregroundColor: ConsoleColor.Yellow);
-ForegroundColor = ConsoleColor.Cyan;
-TypeOfDemo.ShowDemo();
-ForegroundColor = ConsoleColor.White;
-_footer.DisplayFooter('-');
-
-_header.DisplayHeader('=', "Nullable Boxing Demo", foregroundColor: ConsoleColor.Yellow);
-ForegroundColor = ConsoleColor.Cyan;
-NullableBoxingDemo.ShowDemo();
-ResetColor();
-_footer.DisplayFooter('-');
 
 WriteLine("\n\n Press any key ...");
 
