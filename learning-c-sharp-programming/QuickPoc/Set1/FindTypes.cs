@@ -2,10 +2,10 @@
 
 namespace QuickPoc.Set1
 {
-    public class FindTypes : IShowDemo
+    public class FindTypes : IDemoProgram
     {
 
-        public static void ShowDemo()
+        public void ShowDemo()
         {
             var numbers = new int[] { 1, 2, 3, 4, 5 };
             var type = numbers.GetType();

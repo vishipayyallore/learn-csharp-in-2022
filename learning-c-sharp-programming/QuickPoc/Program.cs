@@ -1,5 +1,6 @@
 ﻿using HeaderFooter.Lib;
 using HeaderFooter.Lib.Interfaces;
+using QuickPoc.Interfaces;
 using QuickPoc.Set;
 using QuickPoc.Set1;
 using QuickPoc.Set2;
@@ -8,11 +9,18 @@ using static System.Console;
 IHeader _header = new Header();
 IFooter _footer = new Footer();
 
-_header.DisplayHeader('=', "Find Types");
-ForegroundColor = ConsoleColor.Cyan;
-FindTypes.ShowDemo();
-Console.ResetColor();
-_footer.DisplayFooter('-');
+RunDemoProgram(new FindTypes(), "Find Types");
+
+void RunDemoProgram(IDemoProgram demoProgram, string programTitle = "No Title")
+{
+    _header.DisplayHeader('=', programTitle);
+
+    ForegroundColor = ConsoleColor.Cyan;
+    demoProgram.ShowDemo();
+    Console.ResetColor();
+    
+    _footer.DisplayFooter('-');
+}
 
 _header.DisplayHeader('=', "Sum of numbers Array V1");
 ForegroundColor = ConsoleColor.Cyan;

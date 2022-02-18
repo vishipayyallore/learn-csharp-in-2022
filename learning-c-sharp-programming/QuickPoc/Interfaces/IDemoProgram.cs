@@ -1,7 +1,7 @@
 ﻿namespace QuickPoc.Interfaces
 {
 
-    public interface IShowDemo
+    public interface IDemoProgram
     {
         void ShowDemo();
     }
