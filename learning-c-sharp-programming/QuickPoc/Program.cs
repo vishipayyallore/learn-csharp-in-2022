@@ -9,7 +9,10 @@ using static System.Console;
 IHeader _header = new Header();
 IFooter _footer = new Footer();
 
+// Set 1 Programs
 RunDemoProgram(new FindTypes(), "Find Types");
+RunDemoProgram(new AddNumbersV1(), "Sum of numbers Array V1");
+RunDemoProgram(new AddNumbersV2(), "Sum of numbers Array V2");
 
 void RunDemoProgram(IDemoProgram demoProgram, string programTitle = "No Title")
 {
@@ -18,21 +21,10 @@ void RunDemoProgram(IDemoProgram demoProgram, string programTitle = "No Title")
     ForegroundColor = ConsoleColor.Cyan;
     demoProgram.ShowDemo();
     Console.ResetColor();
-    
+
     _footer.DisplayFooter('-');
 }
 
-_header.DisplayHeader('=', "Sum of numbers Array V1");
-ForegroundColor = ConsoleColor.Cyan;
-AddNumbersV1.ShowDemo();
-Console.ResetColor();
-_footer.DisplayFooter('-');
-
-_header.DisplayHeader('=', "Sum of numbers Array V2");
-ForegroundColor = ConsoleColor.Cyan;
-AddNumbersV2.ShowDemo();
-Console.ResetColor();
-_footer.DisplayFooter('-');
 
 AssemblyTypesAndMethodsDemo.ShowDemo();
 BasicDataTypesRangeDemo.ShowDemo();

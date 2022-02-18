@@ -1,12 +1,13 @@
-﻿using static System.Console;
+﻿using QuickPoc.Interfaces;
+using static System.Console;
 
 namespace QuickPoc.Set1
 {
 
-    public class AddNumbersV2
+    public class AddNumbersV2 : IDemoProgram
     {
 
-        public static void ShowDemo()
+        public void ShowDemo()
         {
             var numbers = new int[] { 1, 2, 3, 4, 5 };
 
