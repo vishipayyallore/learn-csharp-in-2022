@@ -8,6 +8,12 @@ using static System.Console;
 IHeader _header = new Header();
 IFooter _footer = new Footer();
 
+_header.DisplayHeader('=', "Find Types");
+ForegroundColor = ConsoleColor.Cyan;
+FindTypes.ShowDemo();
+Console.ResetColor();
+_footer.DisplayFooter('-');
+
 _header.DisplayHeader('=', "Sum of numbers Array V1");
 ForegroundColor = ConsoleColor.Cyan;
 AddNumbersV1.ShowDemo();
