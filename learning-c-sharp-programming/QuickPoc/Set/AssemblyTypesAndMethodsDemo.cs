@@ -1,16 +1,17 @@
-﻿using System.Data;
+﻿using QuickPoc.Interfaces;
+using System.Data;
 using System.Reflection;
 using static System.Console;
 
 namespace QuickPoc.Set
 {
-    public class AssemblyTypesAndMethodsDemo
+    public class AssemblyTypesAndMethodsDemo : IDemoProgram
     {
 
         DataSet? _ds;
         HttpClient? _httpClient;
 
-        public static void ShowDemo()
+        public void ShowDemo()
         {
             Assembly? _assembly = Assembly.GetEntryAssembly();
             if (_assembly == null)
@@ -28,7 +29,7 @@ namespace QuickPoc.Set
 
                 foreach (TypeInfo typeInfo in assembly.GetTypes())
                 {
-                    methodCount += typeInfo.GetMethods().Count();
+                    methodCount += typeInfo.GetMethods().Length;
                 }
 
                 // output the count of types and their methods

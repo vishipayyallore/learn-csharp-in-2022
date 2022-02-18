@@ -1,11 +1,12 @@
-﻿using static System.Console;
+﻿using QuickPoc.Interfaces;
+using static System.Console;
 
 namespace QuickPoc.Set
 {
-    public class BasicDataTypesRangeDemo
+    public class BasicDataTypesRangeDemo : IDemoProgram
     {
 
-        public static void ShowDemo()
+        public void ShowDemo()
         {
             WriteLine("--------------------------------------------------------------------------");
             WriteLine("Type    Byte(s) of memory               Min                            Max");

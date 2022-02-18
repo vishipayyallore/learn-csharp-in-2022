@@ -9,7 +9,11 @@ using static System.Console;
 IHeader _header = new Header();
 IFooter _footer = new Footer();
 
-// Set 1 Programs
+// Set Group Programs
+RunDemoProgram(new AssemblyTypesAndMethodsDemo(), "Assembly Types And Methods");
+RunDemoProgram(new BasicDataTypesRangeDemo(), "Basic DataTypes Range Demo");
+
+// Set 1 Group Programs
 RunDemoProgram(new FindTypes(), "Find Types");
 RunDemoProgram(new AddNumbersV1(), "Sum of numbers Array V1");
 RunDemoProgram(new AddNumbersV2(), "Sum of numbers Array V2");
@@ -26,8 +30,6 @@ void RunDemoProgram(IDemoProgram demoProgram, string programTitle = "No Title")
 }
 
 
-AssemblyTypesAndMethodsDemo.ShowDemo();
-BasicDataTypesRangeDemo.ShowDemo();
 
 _header.DisplayHeader('=', "Names With ArrayList");
 NamesWithArrayList.ShowDemo();
