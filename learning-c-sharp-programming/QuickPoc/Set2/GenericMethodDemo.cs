@@ -8,20 +8,20 @@ namespace QuickPoc.Set2
 
         public void ShowDemo()
         {
-            List<int> numbers = new() { 5, 10, 15, 20, 25 };
+            List<int> numbersList = new() { 5, 10, 15, 20, 25 };
 
-            List<int> firstTwo = CopyAtMost(numbers, 2);
-            Console.WriteLine($"List Count: {firstTwo.Count}. Elements: {string.Join(", ", firstTwo)}");
+            List<int> firstTwoNumbers = CopyAtMost(numbersList, 2);
+            Console.WriteLine($"List Count: {firstTwoNumbers.Count}. Elements: {string.Join(", ", firstTwoNumbers)}");
         }
 
-        public static List<T> CopyAtMost<T>(List<T> input, int maxElements)
+        public static List<T> CopyAtMost<T>(List<T> numbersList, int maxElements)
         {
-            var capacity = Math.Min(input.Count, maxElements);
+            var capacity = Math.Min(numbersList.Count, maxElements);
             List<T> returnList = new(capacity);
 
             for (int i = 0; i < capacity; i++)
             {
-                returnList.Add(input[i]);
+                returnList.Add(numbersList[i]);
             }
 
             return returnList;
