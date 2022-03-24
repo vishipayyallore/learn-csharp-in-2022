@@ -3,6 +3,7 @@ using static System.Console;
 
 namespace QuickPoc.Set1
 {
+
     public class AddNumbersV1 : IDemoProgram
     {
 
@@ -10,19 +11,17 @@ namespace QuickPoc.Set1
         {
             var numbers = new int[] { 1, 2, 3, 4, 5 };
 
-            var sum = AddNumbers(numbers);
-
-            WriteLine($"Sum of {string.Join(',', numbers)} = {sum}");
+            WriteLine($"Sum of {string.Join(',', numbers)} = {AddNumbers(numbers)}");
         }
 
         private static int AddNumbers(int[] numbers)
         {
-            var sum = numbers.Aggregate(
-                0,                          // Initial value of accumulator
-                (total, num) => total + num // Operation to perform on each value
-            );
+            var sum = numbers.Aggregate(0 /*Initial value of accumulator */,
+                (total, num) => total + num /* Operation to perform on each value */);
 
             return sum;
         }
+
     }
+
 }
