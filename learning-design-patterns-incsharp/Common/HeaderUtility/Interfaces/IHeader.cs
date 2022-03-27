@@ -6,5 +6,5 @@ namespace HeaderUtility.Interfaces
         void PrintHeader(char headerPattern, string title, int length = 100);
 
     }
-    
+
 }
