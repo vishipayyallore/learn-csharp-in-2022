@@ -1,10 +1,9 @@
 namespace HeaderUtility.Interfaces
 {
+
     public interface IHeader
     {
-
-        void PrintHeader(char headerPattern, string title, int length = 100);
-
+        void PrintHeader(char header, string title, int length = 100, ConsoleColor foregroundColor = ConsoleColor.Cyan);
     }
 
 }

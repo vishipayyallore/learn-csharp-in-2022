@@ -14,7 +14,7 @@ namespace HeaderFooter.Lib
 
             WriteLine($"\n{new string(footer, length)}\n");
 
-            ForegroundColor = ConsoleColor.White;
+            ResetColor();
         }
 
     }
