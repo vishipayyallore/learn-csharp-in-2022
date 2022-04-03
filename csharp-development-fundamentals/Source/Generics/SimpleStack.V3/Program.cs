@@ -1,4 +1,4 @@
-﻿using SimpleStack.V1;
+﻿using SimpleStack.V3;
 using static System.Console;
 
 StackDoubles();
@@ -8,7 +8,7 @@ WriteLine("\n\nPress any key ...");
 
 static void StackDoubles()
 {
-    var stack = new SimpleStackDouble();
+    var stack = new SimpleStackGeneric<double>();
     stack.Push(1.2);
     stack.Push(2.8);
     stack.Push(3.0);
@@ -27,7 +27,7 @@ static void StackDoubles()
 
 static void StackStrings()
 {
-    var stack = new SimpleStackString();
+    var stack = new SimpleStackGeneric<string>();
     stack.Push("Pluralsight");
     stack.Push("Udemy");
     stack.Push("Cloud Academy");
