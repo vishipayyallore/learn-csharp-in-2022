@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{E320E06E-BDB5-49E4-B190-84DC6649C1E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{B082D988-7354-4988-9EAD-55A225054370}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6218C1B5-6A9A-42F4-BDC2-46E6A3460525}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{09D5AFF7-034C-43A1-904D-89022F5850F0}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generics", "Generics", "{8EF198A6-6612-443D-911A-69B96AF13951}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleStack.V1", "Source\Generics\SimpleStack.V1\SimpleStack.V1.csproj", "{E6B2CBE3-AE93-4DC1-AA4B-0932A8EB7B27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6B2CBE3-AE93-4DC1-AA4B-0932A8EB7B27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6B2CBE3-AE93-4DC1-AA4B-0932A8EB7B27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6B2CBE3-AE93-4DC1-AA4B-0932A8EB7B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6B2CBE3-AE93-4DC1-AA4B-0932A8EB7B27}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8EF198A6-6612-443D-911A-69B96AF13951} = {E320E06E-BDB5-49E4-B190-84DC6649C1E3}
+		{E6B2CBE3-AE93-4DC1-AA4B-0932A8EB7B27} = {8EF198A6-6612-443D-911A-69B96AF13951}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {597E81B7-D98A-410E-BA51-548186EEE8CF}
+	EndGlobalSection
+EndGlobal
