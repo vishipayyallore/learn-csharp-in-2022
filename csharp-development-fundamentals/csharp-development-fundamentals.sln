@@ -25,7 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStack.V3", "Source\Ge
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStack.V4", "Source\Generics\SimpleStack.V4\SimpleStack.V4.csproj", "{29059F4B-0781-4B14-81C7-0730A1138448}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericRepository.V1", "Source\Generics\GenericRepository.V1\GenericRepository.V1.csproj", "{5D0101C8-8DA5-44AC-84FC-7630C39F8EB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericRepository.V1", "Source\Generics\GenericRepository.V1\GenericRepository.V1.csproj", "{5D0101C8-8DA5-44AC-84FC-7630C39F8EB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleStack.Lib", "Source\Generics\SimpleStack.Lib\SimpleStack.Lib.csproj", "{7361F29E-B585-43CD-9500-287CDCB78C2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleStack.App", "Source\Generics\SimpleStack.App\SimpleStack.App.csproj", "{2348A594-AAA6-41BC-A369-1883B99901E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,14 @@ Global
 		{5D0101C8-8DA5-44AC-84FC-7630C39F8EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D0101C8-8DA5-44AC-84FC-7630C39F8EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D0101C8-8DA5-44AC-84FC-7630C39F8EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7361F29E-B585-43CD-9500-287CDCB78C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7361F29E-B585-43CD-9500-287CDCB78C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7361F29E-B585-43CD-9500-287CDCB78C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7361F29E-B585-43CD-9500-287CDCB78C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2348A594-AAA6-41BC-A369-1883B99901E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2348A594-AAA6-41BC-A369-1883B99901E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2348A594-AAA6-41BC-A369-1883B99901E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2348A594-AAA6-41BC-A369-1883B99901E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +76,8 @@ Global
 		{308ACCFB-4C34-4514-A96F-85D128DAC695} = {8EF198A6-6612-443D-911A-69B96AF13951}
 		{29059F4B-0781-4B14-81C7-0730A1138448} = {8EF198A6-6612-443D-911A-69B96AF13951}
 		{5D0101C8-8DA5-44AC-84FC-7630C39F8EB5} = {8EF198A6-6612-443D-911A-69B96AF13951}
+		{7361F29E-B585-43CD-9500-287CDCB78C2C} = {8EF198A6-6612-443D-911A-69B96AF13951}
+		{2348A594-AAA6-41BC-A369-1883B99901E2} = {8EF198A6-6612-443D-911A-69B96AF13951}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {597E81B7-D98A-410E-BA51-548186EEE8CF}
