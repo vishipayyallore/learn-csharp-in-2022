@@ -24,5 +24,20 @@ namespace SimpleStack.App.Helpers
 
             WriteLine($"Sum: {sum}");
         }
+
+        public static void StackStrings()
+        {
+            var stack = new SimpleStackString();
+            stack.Push("Pluralsight");
+            stack.Push("Udemy");
+            stack.Push("Cloud Academy");
+
+            while (stack.Count > 0)
+            {
+                Console.WriteLine(stack.Pop());
+            }
+        }
+
     }
+
 }
