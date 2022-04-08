@@ -27,9 +27,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStack.V4", "Source\Ge
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericRepository.V1", "Source\Generics\GenericRepository.V1\GenericRepository.V1.csproj", "{5D0101C8-8DA5-44AC-84FC-7630C39F8EB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleStack.Lib", "Source\Generics\SimpleStack.Lib\SimpleStack.Lib.csproj", "{7361F29E-B585-43CD-9500-287CDCB78C2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStack.Lib", "Source\Generics\SimpleStack.Lib\SimpleStack.Lib.csproj", "{7361F29E-B585-43CD-9500-287CDCB78C2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleStack.App", "Source\Generics\SimpleStack.App\SimpleStack.App.csproj", "{2348A594-AAA6-41BC-A369-1883B99901E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleStack.App", "Source\Generics\SimpleStack.App\SimpleStack.App.csproj", "{2348A594-AAA6-41BC-A369-1883B99901E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericRepository.Lib", "Source\Generics\GenericRepository.Lib\GenericRepository.Lib.csproj", "{AB32AD43-F2EA-4B89-B623-91DED98D3EA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericRepository.App", "Source\Generics\GenericRepository.App\GenericRepository.App.csproj", "{1ED0AF3A-7B7D-4B26-9C8A-076C41A31A2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +69,14 @@ Global
 		{2348A594-AAA6-41BC-A369-1883B99901E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2348A594-AAA6-41BC-A369-1883B99901E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2348A594-AAA6-41BC-A369-1883B99901E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB32AD43-F2EA-4B89-B623-91DED98D3EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB32AD43-F2EA-4B89-B623-91DED98D3EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB32AD43-F2EA-4B89-B623-91DED98D3EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB32AD43-F2EA-4B89-B623-91DED98D3EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ED0AF3A-7B7D-4B26-9C8A-076C41A31A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED0AF3A-7B7D-4B26-9C8A-076C41A31A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ED0AF3A-7B7D-4B26-9C8A-076C41A31A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED0AF3A-7B7D-4B26-9C8A-076C41A31A2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +90,8 @@ Global
 		{5D0101C8-8DA5-44AC-84FC-7630C39F8EB5} = {8EF198A6-6612-443D-911A-69B96AF13951}
 		{7361F29E-B585-43CD-9500-287CDCB78C2C} = {8EF198A6-6612-443D-911A-69B96AF13951}
 		{2348A594-AAA6-41BC-A369-1883B99901E2} = {8EF198A6-6612-443D-911A-69B96AF13951}
+		{AB32AD43-F2EA-4B89-B623-91DED98D3EA2} = {8EF198A6-6612-443D-911A-69B96AF13951}
+		{1ED0AF3A-7B7D-4B26-9C8A-076C41A31A2C} = {8EF198A6-6612-443D-911A-69B96AF13951}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {597E81B7-D98A-410E-BA51-548186EEE8CF}
