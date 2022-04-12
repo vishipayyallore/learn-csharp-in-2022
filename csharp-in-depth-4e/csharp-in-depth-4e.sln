@@ -23,7 +23,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{266A88FB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{E8C46BA9-F524-438C-A797-28077485387B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderFooter.Lib", "Source\Common\HeaderFooter.Lib\HeaderFooter.Lib.csproj", "{2CEF385B-DCD3-45A9-BB9F-B8E61F2AF69C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeaderFooter.Lib", "Source\Common\HeaderFooter.Lib\HeaderFooter.Lib.csproj", "{2CEF385B-DCD3-45A9-BB9F-B8E61F2AF69C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameGenerator.Lib", "Source\Common\NameGenerator.Lib\NameGenerator.Lib.csproj", "{39101DF9-5E9D-44AF-B361-68397DDCDDD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{2CEF385B-DCD3-45A9-BB9F-B8E61F2AF69C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CEF385B-DCD3-45A9-BB9F-B8E61F2AF69C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CEF385B-DCD3-45A9-BB9F-B8E61F2AF69C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39101DF9-5E9D-44AF-B361-68397DDCDDD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39101DF9-5E9D-44AF-B361-68397DDCDDD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39101DF9-5E9D-44AF-B361-68397DDCDDD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39101DF9-5E9D-44AF-B361-68397DDCDDD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +48,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E8C46BA9-F524-438C-A797-28077485387B} = {97C14CE4-9511-42DE-B119-8E061650DE68}
 		{2CEF385B-DCD3-45A9-BB9F-B8E61F2AF69C} = {E8C46BA9-F524-438C-A797-28077485387B}
+		{39101DF9-5E9D-44AF-B361-68397DDCDDD3} = {E8C46BA9-F524-438C-A797-28077485387B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E51232FB-2FFF-4688-BAE1-46D51E8593A6}
