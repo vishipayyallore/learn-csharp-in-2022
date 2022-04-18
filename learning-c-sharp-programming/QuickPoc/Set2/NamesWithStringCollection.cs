@@ -32,7 +32,7 @@ namespace QuickPoc.Set2
         private static void PrintNames(StringCollection names)
         {
 
-            foreach (string name in names)
+            foreach (string? name in names)
             {
                 Console.WriteLine(name);
             }
