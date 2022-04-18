@@ -32,9 +32,7 @@ namespace QuickPoc.Set2
         private static void PrintNames(StringCollection names)
         {
 
-#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
             foreach (string name in names)
-#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
             {
                 Console.WriteLine(name);
             }

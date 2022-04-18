@@ -8,9 +8,7 @@ var serviceProvider = ConfigureServices();
 
 Console.ResetColor();
 
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-serviceProvider.GetService<ArrayDemoApp>().Run();
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
+serviceProvider?.GetService<ArrayDemoApp>()?.Run();
 
 WriteLine("\n\nPress any key ...");
 ReadKey();

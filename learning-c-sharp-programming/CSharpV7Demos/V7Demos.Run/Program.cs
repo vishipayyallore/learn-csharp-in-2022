@@ -6,9 +6,7 @@ using static System.Console;
 // Generate a provider
 var serviceProvider = ConfigureServices();
 
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-serviceProvider.GetService<OutVariablesDemoApp>().Run();
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
+serviceProvider?.GetService<OutVariablesDemoApp>()?.Run();
 
 WriteLine("\n\nPress any key ...");
 ReadKey();
