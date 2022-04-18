@@ -7,12 +7,15 @@ namespace QuickPoc.Set
 {
     public class AssemblyTypesAndMethodsDemo : IDemoProgram
     {
-
-        DataSet? _ds;
-        HttpClient? _httpClient;
+        private DataSet? _ds;
+        private HttpClient? _httpClient;
 
         public void ShowDemo()
         {
+            _ds = new DataSet();
+            _httpClient = new HttpClient();
+            WriteLine($"DataSet: {_ds} || HttpClient: {_httpClient}");
+
             Assembly? _assembly = Assembly.GetEntryAssembly();
             if (_assembly == null)
             {
