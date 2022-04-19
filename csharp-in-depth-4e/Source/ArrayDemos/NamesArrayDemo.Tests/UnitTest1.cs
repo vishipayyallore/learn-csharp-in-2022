@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace ArrayDemos.Tests
+namespace NamesArrayDemo.Tests
 {
     public class UnitTest1
     {
