@@ -38,6 +38,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArrayListDemos", "ArrayList
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamesArrayListDemo.Lib", "Source\ArrayListDemos\NamesArrayListDemo.Lib\NamesArrayListDemo.Lib.csproj", "{ECBB75C8-4401-44FC-8FBF-7F1B83B9C8B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quick.Poc", "Source\Quick.Poc\Quick.Poc.csproj", "{91F2988E-410D-4FD5-AD91-0EBC790BE404}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,6 +78,10 @@ Global
 		{ECBB75C8-4401-44FC-8FBF-7F1B83B9C8B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECBB75C8-4401-44FC-8FBF-7F1B83B9C8B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECBB75C8-4401-44FC-8FBF-7F1B83B9C8B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91F2988E-410D-4FD5-AD91-0EBC790BE404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F2988E-410D-4FD5-AD91-0EBC790BE404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F2988E-410D-4FD5-AD91-0EBC790BE404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F2988E-410D-4FD5-AD91-0EBC790BE404}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +98,7 @@ Global
 		{701FFF41-FE3F-46AF-9E5E-D37240159B9A} = {E8C46BA9-F524-438C-A797-28077485387B}
 		{EE59D643-DF74-4992-A58C-C80C08B3E184} = {97C14CE4-9511-42DE-B119-8E061650DE68}
 		{ECBB75C8-4401-44FC-8FBF-7F1B83B9C8B9} = {EE59D643-DF74-4992-A58C-C80C08B3E184}
+		{91F2988E-410D-4FD5-AD91-0EBC790BE404} = {97C14CE4-9511-42DE-B119-8E061650DE68}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E51232FB-2FFF-4688-BAE1-46D51E8593A6}
