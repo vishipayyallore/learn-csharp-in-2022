@@ -3,8 +3,10 @@ using GenericRepository.Lib.Repositories.V1;
 using GenericRepository.Lib.Repositories.V2;
 
 AddEmployees(new EmployeeRepository());
+AddOrganizations(new OrganizationRepository());
+
 AddEmployeesV1(new GenericRepository<Employee>());
-AddOrganizations(new GenericRepository<Organization>());
+AddOrganizationsV1(new GenericRepository<Organization>());
 
 static void AddEmployees(EmployeeRepository employeeRepository)
 {
@@ -14,6 +16,16 @@ static void AddEmployees(EmployeeRepository employeeRepository)
     }
 
     employeeRepository.Save();
+}
+
+static void AddOrganizations(OrganizationRepository organizationRepository)
+{
+    foreach (var employee in GetAllEmployees())
+    {
+        organizationRepository.Add(employee);
+    }
+
+    organizationRepository.Save();
 }
 
 static void AddEmployeesV1(GenericRepository<Employee> employeeRepository)
@@ -26,7 +38,7 @@ static void AddEmployeesV1(GenericRepository<Employee> employeeRepository)
     employeeRepository.Save();
 }
 
-static void AddOrganizations(GenericRepository<Organization> organizationRepository)
+static void AddOrganizationsV1(GenericRepository<Organization> organizationRepository)
 {
     foreach (var organization in GetAllOrganization())
     {
