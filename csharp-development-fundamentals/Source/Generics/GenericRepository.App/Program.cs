@@ -1,4 +1,5 @@
-﻿using GenericRepository.Lib.Entities;
+﻿using GenericRepository.Lib.Data;
+using GenericRepository.Lib.Entities;
 using GenericRepository.Lib.Repositories.V1;
 using GenericRepository.Lib.Repositories.V2;
 
@@ -10,7 +11,7 @@ AddOrganizationsV1(new GenericRepository<Organization>());
 
 static void AddEmployees(EmployeeRepository employeeRepository)
 {
-    foreach (var employee in GetAllEmployees())
+    foreach (var employee in DummyDataGenerator.GetAllEmployees())
     {
         employeeRepository.Add(employee);
     }
@@ -20,7 +21,7 @@ static void AddEmployees(EmployeeRepository employeeRepository)
 
 static void AddOrganizations(OrganizationRepository organizationRepository)
 {
-    foreach (var employee in GetAllEmployees())
+    foreach (var employee in DummyDataGenerator.GetAllEmployees())
     {
         organizationRepository.Add(employee);
     }
@@ -30,7 +31,7 @@ static void AddOrganizations(OrganizationRepository organizationRepository)
 
 static void AddEmployeesV1(GenericRepository<Employee> employeeRepository)
 {
-    foreach (var employee in GetAllEmployees())
+    foreach (var employee in DummyDataGenerator.GetAllEmployees())
     {
         employeeRepository.Add(employee);
     }
@@ -40,7 +41,7 @@ static void AddEmployeesV1(GenericRepository<Employee> employeeRepository)
 
 static void AddOrganizationsV1(GenericRepository<Organization> organizationRepository)
 {
-    foreach (var organization in GetAllOrganization())
+    foreach (var organization in DummyDataGenerator.GetAllOrganization())
     {
         organizationRepository.Add(organization);
     }
@@ -48,22 +49,3 @@ static void AddOrganizationsV1(GenericRepository<Organization> organizationRepos
     organizationRepository.Save();
 }
 
-static IEnumerable<Employee> GetAllEmployees()
-{
-    return new List<Employee>
-    {
-        new Employee { FirstName = "Sri Varu" },
-        new Employee { FirstName = "Vignesh" },
-        new Employee { FirstName = "RamaKrishna" }
-    };
-}
-
-static IEnumerable<Organization> GetAllOrganization()
-{
-    return new List<Organization>
-    {
-        new Organization { Name = "Organization 1"},
-        new Organization { Name = "Organization 2"},
-        new Organization { Name = "Organization 3"},
-    };
-}
