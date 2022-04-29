@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using NamesArrayListDemo.Lib.Interfaces;
+using System.Collections;
 
 using static System.Console;
 
-namespace Quick.Poc
+namespace NamesArrayListDemo.Lib
 {
-    public class PrintHelper
+
+    public class PrintHelper : IPrintHelper
     {
 
         public void PrintNames(ArrayList names)

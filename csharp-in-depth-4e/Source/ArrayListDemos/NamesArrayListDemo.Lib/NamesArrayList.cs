@@ -1,9 +1,11 @@
 ﻿using NameGenerator.Lib.Interfaces;
+using NamesArrayListDemo.Lib.Interfaces;
 using System.Collections;
 
-namespace Quick.Poc
+namespace NamesArrayListDemo.Lib
 {
-    public class NamesArrayList
+
+    public class NamesArrayList : INamesArrayList
     {
         private readonly IGenerateName _nameGenerator;
 
@@ -24,7 +26,7 @@ namespace Quick.Poc
             return names;
         }
 
-
-
     }
+
+
 }

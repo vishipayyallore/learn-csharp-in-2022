@@ -35,10 +35,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeaderFooter.Tests", "Source\Common\HeaderFooter.Tests\HeaderFooter.Tests.csproj", "{701FFF41-FE3F-46AF-9E5E-D37240159B9A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArrayListDemos", "ArrayListDemos", "{EE59D643-DF74-4992-A58C-C80C08B3E184}"
-	ProjectSection(SolutionItems) = preProject
-		Source\Quick.Poc\NamesArrayList.cs = Source\Quick.Poc\NamesArrayList.cs
-		Source\Quick.Poc\PrintHelper.cs = Source\Quick.Poc\PrintHelper.cs
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NamesArrayListDemo.Lib", "Source\ArrayListDemos\NamesArrayListDemo.Lib\NamesArrayListDemo.Lib.csproj", "{ECBB75C8-4401-44FC-8FBF-7F1B83B9C8B9}"
 EndProject
