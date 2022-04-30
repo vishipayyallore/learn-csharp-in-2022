@@ -9,7 +9,7 @@ namespace NamesArrayListDemo.Lib
     public class PrintHelper : IPrintHelper
     {
 
-        public void PrintNames(ArrayList names)
+        public void Print(ArrayList names)
         {
             foreach (string name in names)
             {

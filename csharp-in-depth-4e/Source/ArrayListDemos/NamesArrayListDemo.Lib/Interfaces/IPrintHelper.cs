@@ -5,7 +5,7 @@ namespace NamesArrayListDemo.Lib.Interfaces
 
     public interface IPrintHelper
     {
-        void PrintNames(ArrayList names);
+        void Print(ArrayList names);
     }
 
 }

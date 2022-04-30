@@ -42,6 +42,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quick.Poc", "Source\Quick.P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamesArrayListDemo.Tests", "Source\ArrayListDemos\NamesArrayListDemo.Tests\NamesArrayListDemo.Tests.csproj", "{6E5EDCE3-1BBB-46A9-8E0E-41980806E85C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayListDemos.Run", "Source\ArrayListDemos\ArrayListDemos.Run\ArrayListDemos.Run.csproj", "{1BDA7211-FCEA-4169-A06C-28F83C27FE20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -88,6 +90,10 @@ Global
 		{6E5EDCE3-1BBB-46A9-8E0E-41980806E85C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E5EDCE3-1BBB-46A9-8E0E-41980806E85C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E5EDCE3-1BBB-46A9-8E0E-41980806E85C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BDA7211-FCEA-4169-A06C-28F83C27FE20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BDA7211-FCEA-4169-A06C-28F83C27FE20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BDA7211-FCEA-4169-A06C-28F83C27FE20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BDA7211-FCEA-4169-A06C-28F83C27FE20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +112,7 @@ Global
 		{ECBB75C8-4401-44FC-8FBF-7F1B83B9C8B9} = {EE59D643-DF74-4992-A58C-C80C08B3E184}
 		{91F2988E-410D-4FD5-AD91-0EBC790BE404} = {97C14CE4-9511-42DE-B119-8E061650DE68}
 		{6E5EDCE3-1BBB-46A9-8E0E-41980806E85C} = {EE59D643-DF74-4992-A58C-C80C08B3E184}
+		{1BDA7211-FCEA-4169-A06C-28F83C27FE20} = {EE59D643-DF74-4992-A58C-C80C08B3E184}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E51232FB-2FFF-4688-BAE1-46D51E8593A6}
