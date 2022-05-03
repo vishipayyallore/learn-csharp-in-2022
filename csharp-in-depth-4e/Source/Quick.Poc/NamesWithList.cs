@@ -1,11 +1,10 @@
 ﻿using NameGenerator.Lib;
 using NameGenerator.Lib.Interfaces;
-using System.Collections.Specialized;
 
 namespace Quick.Poc
 {
 
-    public class NamesWithStringCollection
+    public class NamesWithList
     {
 
         // Temporary Fix
@@ -13,13 +12,13 @@ namespace Quick.Poc
 
         public static void ShowDemo()
         {
-            StringCollection names = GenerateNames();
+            List<string> names = GenerateNames();
             PrintNames(names);
         }
 
-        private static StringCollection GenerateNames()
+        private static List<string> GenerateNames()
         {
-            StringCollection names = new();
+            List<string> names = new();
 
             for (int i = 0; i < 5; i++)
             {
@@ -29,14 +28,12 @@ namespace Quick.Poc
             return names;
         }
 
-        private static void PrintNames(StringCollection names)
+        static void PrintNames(List<string> names)
         {
-
-            foreach (string? name in names)
+            names.ForEach(name =>
             {
                 Console.WriteLine(name);
-            }
-
+            });
         }
 
     }

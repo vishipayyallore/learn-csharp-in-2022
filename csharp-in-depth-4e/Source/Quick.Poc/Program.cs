@@ -1,6 +1,7 @@
 ﻿using Quick.Poc;
 
-var namesWithStringCollection = new NamesWithStringCollection();
-namesWithStringCollection.ShowDemo();
+NamesWithStringCollection.ShowDemo();
+NamesWithList.ShowDemo();
 
 Console.WriteLine("\nHello World !");
+
