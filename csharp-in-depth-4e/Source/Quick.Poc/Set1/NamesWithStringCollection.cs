@@ -3,7 +3,7 @@ using NameGenerator.Lib.Interfaces;
 using Quick.Poc.Interfaces;
 using System.Collections.Specialized;
 
-namespace Quick.Poc
+namespace Quick.Poc.Set1
 {
 
     public class NamesWithStringCollection : IDemoProgram

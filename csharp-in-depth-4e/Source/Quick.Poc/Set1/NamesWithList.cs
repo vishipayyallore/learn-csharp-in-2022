@@ -2,7 +2,7 @@
 using NameGenerator.Lib.Interfaces;
 using Quick.Poc.Interfaces;
 
-namespace Quick.Poc
+namespace Quick.Poc.Set1
 {
 
     public class NamesWithList : IDemoProgram

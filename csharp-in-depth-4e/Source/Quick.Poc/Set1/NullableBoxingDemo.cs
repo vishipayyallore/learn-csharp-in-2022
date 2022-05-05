@@ -1,6 +1,6 @@
 ﻿using Quick.Poc.Interfaces;
 
-namespace Quick.Poc
+namespace Quick.Poc.Set1
 {
 
     public class NullableBoxingDemo : IDemoProgram
