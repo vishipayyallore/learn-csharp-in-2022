@@ -6,9 +6,7 @@ using Quick.Poc.Set1;
 using static System.Console;
 
 // Set 2 Group Programs
-DemoPrograms.Run(new NamesWithStringCollection(), "Names With ArrayList");
-DemoPrograms.Run(new NamesWithList(), "Names With List");
-DemoPrograms.Run(new NullableBoxingDemo(), "Nullable Boxing Demo");
+RunSetOneDemos.Run();
 
 Console.WriteLine("\nPress any key ...");
 
