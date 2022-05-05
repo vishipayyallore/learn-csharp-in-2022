@@ -1,16 +1,17 @@
 ﻿using NameGenerator.Lib;
 using NameGenerator.Lib.Interfaces;
+using Quick.Poc.Interfaces;
 
 namespace Quick.Poc
 {
 
-    public class NamesWithList
+    public class NamesWithList : IDemoProgram
     {
 
         // Temporary Fix
         private static readonly IGenerateName _nameGenerator = new GenerateName();
 
-        public static void ShowDemo()
+        public void ShowDemo()
         {
             List<string> names = GenerateNames();
             PrintNames(names);

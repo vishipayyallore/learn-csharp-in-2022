@@ -1,10 +1,12 @@
-﻿namespace Quick.Poc
+﻿using Quick.Poc.Interfaces;
+
+namespace Quick.Poc
 {
 
-    public class NullableBoxingDemo
+    public class NullableBoxingDemo : IDemoProgram
     {
 
-        public static void ShowDemo()
+        public void ShowDemo()
         {
             int? noValue = new();
             object noValueBoxed = noValue;
