@@ -12,6 +12,7 @@ namespace Quick.Poc.Set1
             DemoPrograms.Run(new NamesWithList(), "Names With List");
             DemoPrograms.Run(new NullableBoxingDemo(), "Nullable Boxing Demo");
             DemoPrograms.Run(new TypeOfDemo(), "TypeOf() Demo");
+            DemoPrograms.Run(new GenericMethodDemo(), "Generic Method Demo");
         }
 
     }
