@@ -1,4 +1,4 @@
-﻿namespace Quick.Poc.Set1
+﻿namespace Quick.Poc.Set1.Helpers
 {
     public class GenericCounter<T>
     {
