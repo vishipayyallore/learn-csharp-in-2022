@@ -1,8 +1,10 @@
 ﻿namespace Quick.Poc.Set1.Helpers
 {
+
     public class GenericCounter<T>
     {
-        private static int value;
+
+        private static int _value;
 
         static GenericCounter()
         {
@@ -11,13 +13,14 @@
 
         public static void Increment()
         {
-            value++;
+            _value++;
         }
 
         public static void Display()
         {
-            Console.WriteLine("Counter for {0}: {1}", typeof(T), value);
+            Console.WriteLine("Counter for {0}: {1}", typeof(T), _value);
         }
+
     }
 
 }
