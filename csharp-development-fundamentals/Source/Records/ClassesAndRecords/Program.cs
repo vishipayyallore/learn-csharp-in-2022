@@ -16,4 +16,6 @@ var classroomCourse = new CourseRecord(
 // Not Allowed
 // classroomCourse.Name = "Another title";
 
+WriteLine($"Class Room Course: {classroomCourse}");
+
 WriteLine("\nPress any key ...");
