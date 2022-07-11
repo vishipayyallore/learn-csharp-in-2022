@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BigPicture.Demos": {
+      "commandName": "Project",
+      "commandLineArgs": "Arg1 Arg2 10 20"
+    }
+  }
+}
