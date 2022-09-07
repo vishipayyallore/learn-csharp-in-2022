@@ -1,4 +1,6 @@
-namespace Loans.UnitTests
+using Xunit;
+
+namespace NamesArrayDemo.Tests
 {
     public class UnitTest1
     {

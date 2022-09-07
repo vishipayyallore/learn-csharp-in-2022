@@ -21,4 +21,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Source\Loans\Loans.csproj" />
+  </ItemGroup>
+
 </Project>

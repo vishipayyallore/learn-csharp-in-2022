@@ -7,7 +7,6 @@
     /// </summary>
     public abstract class ValueObject
     {
-
         protected static bool EqualOperator(ValueObject left, ValueObject right)
         {
             if (ReferenceEquals(left, null) ^ ReferenceEquals(right, null))
@@ -22,7 +21,7 @@
             return !(EqualOperator(left, right));
         }
 
-        protected abstract IEnumerable<object> GetEqualityComponents();
+        protected abstract IEnumerable<object> GetAtomicValues();
 
         public override bool Equals(object obj)
         {
@@ -31,23 +30,35 @@
                 return false;
             }
 
-            var other = (ValueObject)obj;
+            ValueObject other = (ValueObject)obj;
+            IEnumerator<object> thisValues = GetAtomicValues().GetEnumerator();
+            IEnumerator<object> otherValues = other.GetAtomicValues().GetEnumerator();
 
-            return this.GetEqualityComponents().SequenceEqual(other.GetEqualityComponents());
+            while (thisValues.MoveNext() && otherValues.MoveNext())
+            {
+                if (ReferenceEquals(thisValues.Current, null) ^ ReferenceEquals(otherValues.Current, null))
+                {
+                    return false;
+                }
+                if (thisValues.Current != null && !thisValues.Current.Equals(otherValues.Current))
+                {
+                    return false;
+                }
+            }
+            return !thisValues.MoveNext() && !otherValues.MoveNext();
         }
 
         public override int GetHashCode()
         {
-            return GetEqualityComponents()
+            return GetAtomicValues()
              .Select(x => x != null ? x.GetHashCode() : 0)
              .Aggregate((x, y) => x ^ y);
         }
 
         public ValueObject GetCopy()
         {
-            return this.MemberwiseClone() as ValueObject;
+            return MemberwiseClone() as ValueObject;
         }
-
     }
 
 }
