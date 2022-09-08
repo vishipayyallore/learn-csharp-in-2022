@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Source\Loans\Loans.csproj" />
+    <ProjectReference Include="..\..\Source\MiniProjects\Loans\Loans.csproj" />
   </ItemGroup>
 
 </Project>
