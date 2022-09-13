@@ -8,7 +8,7 @@
             Id = id;
 
             UserName = userName;
-            
+
             CoursesCompleted = coursesCompleted;
         }
 
