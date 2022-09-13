@@ -2,8 +2,12 @@
 using LearnersDemo.Services;
 using LearnersDemo.View;
 
-LearnerService learnerService = new LearnerService();
-ILearner learner = learnerService.GetCurrentLearner();
+ILearnerService learnerService = new LearnerService();
 
-LearnerView view = new LearnerView(learner);
-view.RenderView();
+for (int i = 1; i < 5; i++)
+{
+    ILearner learner = learnerService.GetCurrentLearner(i);
+
+    LearnerView view = new(learner);
+    view.RenderView();
+}
