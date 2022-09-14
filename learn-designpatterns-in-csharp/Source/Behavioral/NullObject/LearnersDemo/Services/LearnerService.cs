@@ -9,11 +9,11 @@ namespace LearnersDemo.Services
 
         public ILearner GetCurrentLearner(int learnerId)
         {
-            var learner = _repo.GetLearner(learnerId);
+            //var learner = _repo.GetLearner(learnerId);
+            //if (learner == null) throw new NullReferenceException();
+            //return learner;
 
-            if (learner == null) throw new NullReferenceException();
-
-            return learner;
+            return _repo.GetLearner(learnerId);
         }
 
         class LearnerRepo
@@ -36,12 +36,16 @@ namespace LearnersDemo.Services
 
             internal ILearner GetLearner(int id)
             {
+                ILearner learner = new NullLearner();
+
                 bool learnerExists = _learners.Any(l => l.Id == id);
 
                 if (learnerExists)
-                    return _learners.FirstOrDefault(l => l.Id == id);
+                {
+                    learner = _learners.FirstOrDefault(l => l.Id == id)!;
+                }
 
-                return null;
+                return learner;
             }
         }
 
