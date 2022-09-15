@@ -5,7 +5,7 @@ namespace LearnersDemo.Services
 
     public class LearnerRepo : ILearnerRepo
     {
-        private static readonly IList<Learner> _learners = new List<Learner>();
+        private readonly IList<Learner> _learners = new List<Learner>();
 
         internal LearnerRepo()
         {
