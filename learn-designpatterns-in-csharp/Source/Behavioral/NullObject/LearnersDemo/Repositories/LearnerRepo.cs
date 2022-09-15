@@ -25,9 +25,7 @@ namespace LearnersDemo.Services
         {
             ILearner learner = new NullLearner();
 
-            bool learnerExists = _learners.Any(l => l.Id == id);
-
-            if (learnerExists)
+            if (_learners.Any(l => l.Id == id))
             {
                 learner = _learners.FirstOrDefault(l => l.Id == id)!;
             }
