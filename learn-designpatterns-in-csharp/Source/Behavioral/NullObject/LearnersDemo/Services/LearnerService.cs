@@ -5,7 +5,7 @@ namespace LearnersDemo.Services
 
     public class LearnerService : ILearnerService
     {
-        readonly LearnerRepo _repo = new();
+        readonly ILearnerRepo _learnerRepo = new LearnerRepo();
 
         public ILearner GetCurrentLearner(int learnerId)
         {
@@ -13,7 +13,7 @@ namespace LearnersDemo.Services
             //if (learner == null) throw new NullReferenceException();
             //return learner;
 
-            return _repo.GetLearner(learnerId);
+            return _learnerRepo.GetLearner(learnerId);
         }
 
     }
