@@ -3,7 +3,7 @@
 namespace LearnersDemo.View
 {
 
-    public class LearnerView
+    public class LearnerView : ILearnerView
     {
         private readonly ILearner _learner;
 

@@ -8,6 +8,7 @@ for (int i = 1; i < 5; i++)
 {
     ILearner learner = learnerService.GetCurrentLearner(i);
 
-    LearnerView view = new(learner);
+    ILearnerView view = new LearnerView(learner);
+
     view.RenderView();
 }
