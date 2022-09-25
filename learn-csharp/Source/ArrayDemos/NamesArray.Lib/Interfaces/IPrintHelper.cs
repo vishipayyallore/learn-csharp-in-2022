@@ -1,6 +1,9 @@
 ﻿namespace NamesArray.Lib.Interfaces
 {
-    internal class IPrintHelper
+
+    public interface IPrintHelper
     {
+        void Print(string[] names);
     }
+
 }
