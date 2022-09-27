@@ -1,6 +1,4 @@
-﻿using System;
-
-using static System.Console;
+﻿using static System.Console;
 
 namespace LoggerDemo
 {
@@ -8,7 +6,7 @@ namespace LoggerDemo
     public sealed class Logger
     {
 
-        private static readonly Lazy<Logger> _lazyLogger = new Lazy<Logger>(() => new Logger());
+        private static readonly Lazy<Logger> _lazyLogger = new(() => new Logger());
 
         private Logger()
         {
