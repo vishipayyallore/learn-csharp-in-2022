@@ -1,7 +1,7 @@
 ﻿using LoggerDemo;
 using static System.Console;
 
-Title = "Singleton";
+Title = "Design Pattern - Singleton";
 
 // call the property getter twice
 var instance1 = Logger.Instance;
