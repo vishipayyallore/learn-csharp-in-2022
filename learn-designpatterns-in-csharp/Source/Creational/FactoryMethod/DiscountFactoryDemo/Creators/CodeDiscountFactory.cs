@@ -2,6 +2,7 @@
 
 namespace DiscountFactoryDemo.Creators
 {
+
     /// <summary>
     /// ConcreteCreator
     /// </summary>
@@ -13,6 +14,7 @@ namespace DiscountFactoryDemo.Creators
         {
             _code = code;
         }
+
         public override DiscountService CreateDiscountService()
         {
             return new CodeDiscountService(_code);

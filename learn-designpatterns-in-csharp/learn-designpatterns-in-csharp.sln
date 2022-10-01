@@ -19,7 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerDemo", "Source\Creati
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FactoryMethod", "FactoryMethod", "{D861C5CA-AADB-4B99-B25C-DDC7D38C08C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountFactoryDemo", "Source\Creational\FactoryMethod\DiscountFactoryDemo\DiscountFactoryDemo.csproj", "{2F76FA3F-E166-4653-AE36-4E9E2952D150}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiscountFactoryDemo", "Source\Creational\FactoryMethod\DiscountFactoryDemo\DiscountFactoryDemo.csproj", "{2F76FA3F-E166-4653-AE36-4E9E2952D150}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AbstractFactory", "AbstractFactory", "{9B238FF3-5400-418A-8449-2D5DE9375CAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCartDemo", "Source\Creational\AbstractFactory\ShoppingCartDemo\ShoppingCartDemo.csproj", "{DD77C766-C92E-44ED-A9BC-F1EA4D8A2A4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,10 @@ Global
 		{2F76FA3F-E166-4653-AE36-4E9E2952D150}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F76FA3F-E166-4653-AE36-4E9E2952D150}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F76FA3F-E166-4653-AE36-4E9E2952D150}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD77C766-C92E-44ED-A9BC-F1EA4D8A2A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD77C766-C92E-44ED-A9BC-F1EA4D8A2A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD77C766-C92E-44ED-A9BC-F1EA4D8A2A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD77C766-C92E-44ED-A9BC-F1EA4D8A2A4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +60,8 @@ Global
 		{DFD27849-FF50-4C19-840B-C86E6F2F917C} = {ECFF69F8-FDB6-4984-86A6-F90BE251D0F5}
 		{D861C5CA-AADB-4B99-B25C-DDC7D38C08C5} = {3EAB341A-B9BC-4BB5-94D7-41419F28487B}
 		{2F76FA3F-E166-4653-AE36-4E9E2952D150} = {D861C5CA-AADB-4B99-B25C-DDC7D38C08C5}
+		{9B238FF3-5400-418A-8449-2D5DE9375CAA} = {3EAB341A-B9BC-4BB5-94D7-41419F28487B}
+		{DD77C766-C92E-44ED-A9BC-F1EA4D8A2A4A} = {9B238FF3-5400-418A-8449-2D5DE9375CAA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E1F8916-962D-4485-AB0F-AC9833C7577F}
