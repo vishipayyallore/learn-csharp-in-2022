@@ -7,22 +7,18 @@ namespace LoggerDemo
     {
 
         private static readonly Lazy<Logger> _lazyLogger = new(() => new Logger());
+        DateTime dateTime = new();
 
         private Logger()
         {
         }
 
-        public static Logger Instance
-        {
-            get
-            {
-                return _lazyLogger.Value;
-            }
-        }
+        public static Logger Instance => _lazyLogger.Value;
 
         public void Log(string message)
         {
-            WriteLine($"Message to log: {message}");
+            dateTime = DateTime.Now;
+            WriteLine($"{dateTime} Message to log: {message}");
         }
 
     }
