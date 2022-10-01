@@ -1,5 +1,6 @@
 ﻿namespace DiscountFactoryDemo.Products
 {
+
     /// <summary>
     /// ConcreteProduct
     /// </summary>
@@ -20,4 +21,5 @@
             get => 15;
         }
     }
+
 }
