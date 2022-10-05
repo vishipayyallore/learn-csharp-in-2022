@@ -1,5 +1,7 @@
 ﻿using LearnersDemo.Entities;
 
+using static System.Console;
+
 namespace LearnersDemo.View
 {
 
@@ -17,8 +19,8 @@ namespace LearnersDemo.View
 
         public void RenderView()
         {
-            Console.WriteLine($"User Name: {_learner.UserName}");
-            Console.WriteLine($"Courses Completed: {_learner.CoursesCompleted}");
+            WriteLine($"User Name: {_learner.UserName}");
+            WriteLine($"Courses Completed: {_learner.CoursesCompleted}");
         }
     }
 
