@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CityAdapter.Data\CityAdapterData.csproj" />
+    <ProjectReference Include="..\CityAdapterData\CityAdapterData.csproj" />
   </ItemGroup>
 
 </Project>
