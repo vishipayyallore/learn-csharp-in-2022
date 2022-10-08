@@ -1,4 +1,4 @@
-﻿using CityAdapter.Data;
+﻿using CityAdapterData;
 using CityObjectAdapterDemo.Adaptees;
 using CityObjectAdapterDemo.Targets;
 

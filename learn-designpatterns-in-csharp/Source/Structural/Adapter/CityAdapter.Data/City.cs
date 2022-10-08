@@ -1,4 +1,4 @@
-﻿namespace CityAdapter.Data
+﻿namespace CityAdapterData
 {
 
     public class City

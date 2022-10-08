@@ -1,4 +1,4 @@
-﻿using CityAdapter.Data;
+﻿using CityAdapterData;
 
 namespace CityObjectAdapterDemo.Targets
 {

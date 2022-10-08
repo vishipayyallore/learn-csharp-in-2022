@@ -41,7 +41,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityObjectAdapterDemo", "So
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityClassAdapterDemo", "Source\Structural\Adapter\CityClassAdapterDemo\CityClassAdapterDemo.csproj", "{B1008244-455B-4FAF-B968-A230D0A188C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityAdapter.Data", "Source\Structural\Adapter\CityAdapter.Data\CityAdapter.Data.csproj", "{E4F6F34B-A5B9-43C5-9089-C744C1C554E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityAdapterData", "Source\Structural\Adapter\CityAdapter.Data\CityAdapterData.csproj", "{E4F6F34B-A5B9-43C5-9089-C744C1C554E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
