@@ -10,10 +10,8 @@ namespace FoodMenuDemo.Abstraction
         public VegetarianMenu(ICoupon coupon) : base(coupon)
         {
         }
-        public override int CalculatePrice()
-        {
-            return 20 - _coupon.CouponValue;
-        }
+
+        public override int CalculatePrice() => 20 - _coupon.CouponValue;
     }
 
 }
