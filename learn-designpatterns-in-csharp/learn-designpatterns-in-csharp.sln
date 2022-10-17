@@ -37,11 +37,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural", "Structural", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapter", "Adapter", "{8CD0570F-16A8-45C6-8D72-E4FFDC8D7591}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityObjectAdapterDemo", "Source\Structural\Adapter\CityObjectAdapterDemo\CityObjectAdapterDemo.csproj", "{617097A3-B527-4553-BD2A-CA3C128DFA4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityObjectAdapterDemo", "Source\Structural\Adapter\CityObjectAdapterDemo\CityObjectAdapterDemo.csproj", "{617097A3-B527-4553-BD2A-CA3C128DFA4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityClassAdapterDemo", "Source\Structural\Adapter\CityClassAdapterDemo\CityClassAdapterDemo.csproj", "{B1008244-455B-4FAF-B968-A230D0A188C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityClassAdapterDemo", "Source\Structural\Adapter\CityClassAdapterDemo\CityClassAdapterDemo.csproj", "{B1008244-455B-4FAF-B968-A230D0A188C8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityAdapterData", "Source\Structural\Adapter\CityAdapterData\CityAdapterData.csproj", "{0B114659-B408-4F85-A791-59D4672363BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bridge", "Bridge", "{E4A9D841-EEAB-4B12-96DA-4A1B97DD75A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodMenuDemo", "Source\Structural\Bridge\FoodMenuDemo\FoodMenuDemo.csproj", "{EF8DD0A9-B0F3-4570-8679-54FAD41ABE7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +89,10 @@ Global
 		{0B114659-B408-4F85-A791-59D4672363BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B114659-B408-4F85-A791-59D4672363BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B114659-B408-4F85-A791-59D4672363BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF8DD0A9-B0F3-4570-8679-54FAD41ABE7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF8DD0A9-B0F3-4570-8679-54FAD41ABE7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF8DD0A9-B0F3-4570-8679-54FAD41ABE7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF8DD0A9-B0F3-4570-8679-54FAD41ABE7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,6 +117,8 @@ Global
 		{617097A3-B527-4553-BD2A-CA3C128DFA4F} = {8CD0570F-16A8-45C6-8D72-E4FFDC8D7591}
 		{B1008244-455B-4FAF-B968-A230D0A188C8} = {8CD0570F-16A8-45C6-8D72-E4FFDC8D7591}
 		{0B114659-B408-4F85-A791-59D4672363BB} = {8CD0570F-16A8-45C6-8D72-E4FFDC8D7591}
+		{E4A9D841-EEAB-4B12-96DA-4A1B97DD75A4} = {D8A00610-C8EA-4651-89D0-2FAB3A2B774E}
+		{EF8DD0A9-B0F3-4570-8679-54FAD41ABE7C} = {E4A9D841-EEAB-4B12-96DA-4A1B97DD75A4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E1F8916-962D-4485-AB0F-AC9833C7577F}
