@@ -1,6 +1,6 @@
 ﻿using static System.Console;
 
-namespace MailServiceDemo.Decorators
+namespace MailServiceDemo.Components
 {
     /// <summary>
     /// ConcreteComponent1

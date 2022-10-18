@@ -1,4 +1,4 @@
-﻿namespace MailServiceDemo.Decorators
+﻿namespace MailServiceDemo.Components
 {
 
     /// <summary>
