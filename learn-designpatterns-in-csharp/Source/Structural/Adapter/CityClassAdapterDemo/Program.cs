@@ -9,7 +9,7 @@ ForegroundColor = ConsoleColor.Cyan;
 ICityAdapter adapter = new CityAdapter();
 var city = adapter.GetCity();
 
-Console.WriteLine($"{city.FullName}, {city.Inhabitants}");
+WriteLine($"{city.FullName}, {city.Inhabitants}");
 
 ResetColor();
 WriteLine("\n\nPress any key ...");
