@@ -8,8 +8,8 @@ namespace FileSystemItemDemo.Composites
     /// </summary>
     public class Directory : FileSystemItem
     {
-        private long _size;
-        private List<FileSystemItem> _fileSystemItems { get; set; } = new List<FileSystemItem>();
+        private readonly long _size;
+        private List<FileSystemItem> FileSystemItems { get; set; } = new List<FileSystemItem>();
 
         public Directory(string name, long size) : base(name)
         {
@@ -18,21 +18,23 @@ namespace FileSystemItemDemo.Composites
 
         public void Add(FileSystemItem itemToAdd)
         {
-            _fileSystemItems.Add(itemToAdd);
+            FileSystemItems.Add(itemToAdd);
         }
 
         public void Remove(FileSystemItem itemToRemove)
         {
-            _fileSystemItems.Remove(itemToRemove);
+            FileSystemItems.Remove(itemToRemove);
         }
 
         public override long GetSize()
         {
             var treeSize = _size;
-            foreach (var fileSystemItem in _fileSystemItems)
+
+            foreach (var fileSystemItem in FileSystemItems)
             {
                 treeSize += fileSystemItem.GetSize();
             }
+            
             return treeSize;
         }
     }
