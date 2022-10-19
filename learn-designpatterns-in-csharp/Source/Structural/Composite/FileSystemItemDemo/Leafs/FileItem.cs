@@ -6,10 +6,10 @@ namespace FileSystemItemDemo.Leafs
     /// <summary>
     /// Leaf
     /// </summary>
-    public class File : FileSystemItem
+    public class FileItem : FileSystemItem
     {
         private long _size;
-        public File(string name, long size) : base(name)
+        public FileItem(string name, long size) : base(name)
         {
             _size = size;
         }

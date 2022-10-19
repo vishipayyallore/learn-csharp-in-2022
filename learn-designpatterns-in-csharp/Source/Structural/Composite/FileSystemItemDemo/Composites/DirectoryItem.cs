@@ -6,12 +6,12 @@ namespace FileSystemItemDemo.Composites
     /// <summary>
     /// Composite
     /// </summary>
-    public class Directory : FileSystemItem
+    public class DirectoryItem : FileSystemItem
     {
         private readonly long _size;
         private List<FileSystemItem> FileSystemItems { get; set; } = new List<FileSystemItem>();
 
-        public Directory(string name, long size) : base(name)
+        public DirectoryItem(string name, long size) : base(name)
         {
             _size = size;
         }
@@ -34,7 +34,7 @@ namespace FileSystemItemDemo.Composites
             {
                 treeSize += fileSystemItem.GetSize();
             }
-            
+
             return treeSize;
         }
     }
