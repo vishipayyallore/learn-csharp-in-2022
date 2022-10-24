@@ -9,13 +9,13 @@ namespace DocumentDemo.Subjects
     public class Document : IDocument
     {
         private readonly string _fileName;
-        
+
         public string? Title { get; private set; }
-        
+
         public string? Content { get; private set; }
-        
+
         public int AuthorId { get; private set; }
-        
+
         public DateTimeOffset LastAccessed { get; private set; }
 
 
