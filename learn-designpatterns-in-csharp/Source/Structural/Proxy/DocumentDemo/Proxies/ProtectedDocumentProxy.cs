@@ -16,9 +16,9 @@ namespace DocumentDemo.Proxies
 
         public ProtectedDocumentProxy(string fileName, string userRole)
         {
-            _fileName = fileName;
+            _fileName = fileName ?? throw new ArgumentNullException(nameof(fileName));
 
-            _userRole = userRole;
+            _userRole = userRole ?? throw new ArgumentNullException(nameof(userRole));
 
             _documentProxy = new DocumentProxy(_fileName);
         }
