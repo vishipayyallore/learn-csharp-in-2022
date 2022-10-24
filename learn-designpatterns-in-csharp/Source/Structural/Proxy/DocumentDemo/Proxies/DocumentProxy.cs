@@ -14,7 +14,7 @@ namespace DocumentDemo.Proxies
 
         public DocumentProxy(string fileName)
         {
-            _fileName = fileName;
+            _fileName = fileName ?? throw new ArgumentNullException(nameof(fileName));
 
             _document = new Lazy<Document>(() => new Document(_fileName));
         }
