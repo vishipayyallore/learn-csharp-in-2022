@@ -18,16 +18,16 @@ namespace DocumentDemo.Subjects
 
         public DateTimeOffset LastAccessed { get; private set; }
 
-
         public Document(string fileName)
         {
-            _fileName = fileName;
-            LoadDocument(fileName);
+            _fileName = fileName ?? throw new ArgumentNullException(nameof(fileName));
+
+            LoadDocument(_fileName);
         }
 
         private void LoadDocument(string fileName)
         {
-            WriteLine("Executing expensive action: loading a file from disk");
+            WriteLine($"Executing expensive action: loading a {fileName} from disk");
 
             // fake loading...
             Thread.Sleep(1000);
@@ -42,6 +42,7 @@ namespace DocumentDemo.Subjects
         {
             WriteLine($"Title: {Title}, Content: {Content}.\n");
         }
+
     }
 
 }
