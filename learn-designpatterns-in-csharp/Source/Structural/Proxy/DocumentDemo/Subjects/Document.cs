@@ -40,7 +40,7 @@ namespace DocumentDemo.Subjects
 
         public void DisplayDocument()
         {
-            WriteLine($"Title: {Title}, Content: {Content}");
+            WriteLine($"Title: {Title}, Content: {Content}.\n");
         }
     }
 
