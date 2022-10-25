@@ -8,8 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Flyweights\" />
-    <Folder Include="ConcreteFlyweight\" />
     <Folder Include="FlyweightFactory\" />
   </ItemGroup>
 
