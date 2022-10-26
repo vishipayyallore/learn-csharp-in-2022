@@ -2,13 +2,12 @@
 
 namespace CharactersDemo.ConcreteFlyweight
 {
-
     /// <summary>
     /// Concrete Flyweight
     /// </summary>
-    public class CharacterA : ICharacter
+    public class CharacterB : ICharacter
     {
-        private char _actualCharacter = 'a';
+        private char _actualCharacter = 'b';
         private string _fontFamily = string.Empty;
         private int _fontSize;
 
