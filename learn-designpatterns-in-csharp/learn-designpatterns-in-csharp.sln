@@ -65,7 +65,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocumentDemo", "Source\Stru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Flyweight", "Flyweight", "{3AE0B8D5-05A1-4F1A-B01D-482D140F5AFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharactersDemo", "Source\Structural\Flyweight\CharactersDemo\CharactersDemo.csproj", "{45045A9E-70F8-46BA-B9CA-240B0684201E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharactersDemo", "Source\Structural\Flyweight\CharactersDemo\CharactersDemo.csproj", "{45045A9E-70F8-46BA-B9CA-240B0684201E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4C339E44-2F14-4C31-8602-C65A13100FDC}"
 EndProject
@@ -84,6 +84,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NullObject", "NullObject", "{2FF7AFDF-C443-4FD6-A775-BA3B031BC106}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnersDemo.Tests", "Tests\Behavioral\NullObject\LearnersDemo.Tests\LearnersDemo.Tests.csproj", "{5BAD6B5F-132E-477F-8666-28BA888C1B27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TemplateMethod", "TemplateMethod", "{3F4DF829-A294-43AF-8B11-D83779619209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailParserDemo", "Source\Behavioral\TemplateMethod\MailParserDemo\MailParserDemo.csproj", "{15B23E6B-D612-4A79-9DC5-D3D3790430BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -155,6 +159,10 @@ Global
 		{5BAD6B5F-132E-477F-8666-28BA888C1B27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BAD6B5F-132E-477F-8666-28BA888C1B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BAD6B5F-132E-477F-8666-28BA888C1B27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B23E6B-D612-4A79-9DC5-D3D3790430BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B23E6B-D612-4A79-9DC5-D3D3790430BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B23E6B-D612-4A79-9DC5-D3D3790430BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B23E6B-D612-4A79-9DC5-D3D3790430BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -196,6 +204,8 @@ Global
 		{CAD53C4D-0AB1-441F-BB5E-F9E075C6B47A} = {4C339E44-2F14-4C31-8602-C65A13100FDC}
 		{2FF7AFDF-C443-4FD6-A775-BA3B031BC106} = {8482BAC6-5ACD-4FCF-A630-7E75DC5889D3}
 		{5BAD6B5F-132E-477F-8666-28BA888C1B27} = {2FF7AFDF-C443-4FD6-A775-BA3B031BC106}
+		{3F4DF829-A294-43AF-8B11-D83779619209} = {80464B37-B9DE-4CD0-A934-2C106FB4F79C}
+		{15B23E6B-D612-4A79-9DC5-D3D3790430BA} = {3F4DF829-A294-43AF-8B11-D83779619209}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E1F8916-962D-4485-AB0F-AC9833C7577F}
