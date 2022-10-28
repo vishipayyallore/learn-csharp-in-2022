@@ -1,5 +1,7 @@
 ﻿using CharactersDemo.Flyweights;
 
+using static System.Console;
+
 namespace CharactersDemo.ConcreteFlyweight
 {
     /// <summary>
@@ -7,7 +9,7 @@ namespace CharactersDemo.ConcreteFlyweight
     /// </summary>
     public class CharacterB : ICharacter
     {
-        private char _actualCharacter = 'b';
+        private readonly char _actualCharacter = 'b';
         private string _fontFamily = string.Empty;
         private int _fontSize;
 
@@ -15,7 +17,8 @@ namespace CharactersDemo.ConcreteFlyweight
         {
             _fontFamily = fontFamily;
             _fontSize = fontSize;
-            Console.WriteLine($"Drawing {_actualCharacter}, {_fontFamily} {_fontSize}");
+
+            WriteLine($"Drawing {_actualCharacter}, {_fontFamily} {_fontSize}");
         }
     }
 

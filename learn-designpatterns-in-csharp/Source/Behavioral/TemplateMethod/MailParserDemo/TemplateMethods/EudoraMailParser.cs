@@ -1,16 +1,19 @@
 ﻿using MailParserDemo.AbstractTemplateMethods;
 
+using static System.Console;
+
 namespace MailParserDemo.TemplateMethods
 {
     public class EudoraMailParser : MailParser
     {
         public override void FindServer()
         {
-            Console.WriteLine("Finding Eudora server through a custom algorithm...");
+            WriteLine("Finding Eudora server through a custom algorithm...");
         }
+
         public override void AuthenticateToServer()
         {
-            Console.WriteLine("Connecting to Eudora");
+            WriteLine("Connecting to Eudora");
         }
     }
 

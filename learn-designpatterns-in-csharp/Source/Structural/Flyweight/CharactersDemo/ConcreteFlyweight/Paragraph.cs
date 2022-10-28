@@ -1,5 +1,7 @@
 ﻿using CharactersDemo.Flyweights;
 
+using static System.Console;
+
 namespace CharactersDemo.ConcreteFlyweight
 {
 
@@ -19,7 +21,7 @@ namespace CharactersDemo.ConcreteFlyweight
 
         public void Draw(string fontFamily, int fontSize)
         {
-            Console.WriteLine($"Drawing in paragraph at location {_location}");
+            WriteLine($"Drawing in paragraph at location {_location}");
             foreach (var character in _characters)
             {
                 character.Draw(fontFamily, fontSize);

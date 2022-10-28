@@ -1,12 +1,14 @@
 ﻿using MailParserDemo.AbstractTemplateMethods;
 
+using static System.Console;
+
 namespace MailParserDemo.TemplateMethods
 {
     public class ApacheMailParser : MailParser
     {
         public override void AuthenticateToServer()
         {
-            Console.WriteLine("Connecting to Apache");
+            WriteLine("Connecting to Apache");
         }
     }
 

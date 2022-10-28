@@ -1,5 +1,7 @@
 ﻿using MailParserDemo.AbstractTemplateMethods;
 
+using static System.Console;
+
 namespace MailParserDemo.TemplateMethods
 {
 
@@ -7,7 +9,7 @@ namespace MailParserDemo.TemplateMethods
     {
         public override void AuthenticateToServer()
         {
-            Console.WriteLine("Connecting to Exchange");
+            WriteLine("Connecting to Exchange");
         }
     }
 
