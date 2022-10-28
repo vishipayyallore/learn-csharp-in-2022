@@ -1,6 +1,8 @@
 ﻿using CharactersDemo.ConcreteFlyweight;
 using CharactersDemo.Flyweights;
 
+using static System.Console;
+
 namespace CharactersDemo.FlyweightFactory
 {
 
@@ -16,13 +18,13 @@ namespace CharactersDemo.FlyweightFactory
             // Coes the character dictionary contain the one we need? 
             if (_characters.ContainsKey(characterIdentifier))
             {
-                Console.WriteLine("Character reuse");
+                WriteLine("Character reuse");
                 return _characters[characterIdentifier];
             }
 
             // The character isn't in the dictionary. 
             // Create it, store it, return it.
-            Console.WriteLine("Character construction");
+            WriteLine("Character construction");
             switch (characterIdentifier)
             {
                 case 'a':
