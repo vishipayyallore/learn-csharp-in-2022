@@ -9,7 +9,7 @@
         void Execute();
 
         bool CanExecute();
-        
+
         void Undo();
     }
 

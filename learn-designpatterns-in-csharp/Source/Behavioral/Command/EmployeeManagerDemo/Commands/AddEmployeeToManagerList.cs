@@ -15,9 +15,9 @@ namespace EmployeeManagerDemo.Commands
         public AddEmployeeToManagerList(IEmployeeManagerRepository employeeManagerRepository, int managerId, Employee? employee)
         {
             _employeeManagerRepository = employeeManagerRepository ?? throw new ArgumentNullException(nameof(employeeManagerRepository));
-            
+
             _managerId = managerId;
-            
+
             _employee = employee;
         }
 
