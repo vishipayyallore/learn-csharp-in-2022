@@ -1,4 +1,4 @@
-﻿using EmployeeManagerDemo.Commands;
+﻿using EmployeeManagerDemo.Models;
 
 namespace EmployeeManagerDemo.Receivers
 {
