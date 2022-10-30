@@ -7,13 +7,14 @@ namespace EmployeeManagerDemo.Invokers
     /// </summary>
     public class CommandManager
     {
-        private readonly Stack<ICommand> _commands = new Stack<ICommand>();
+        private readonly Stack<ICommand> _commands = new();
 
         public void Invoke(ICommand command)
         {
             if (command.CanExecute())
             {
                 command.Execute();
+
                 _commands.Push(command);
             }
         }

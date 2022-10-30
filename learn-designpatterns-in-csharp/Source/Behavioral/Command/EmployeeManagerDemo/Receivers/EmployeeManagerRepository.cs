@@ -1,5 +1,7 @@
 ﻿using EmployeeManagerDemo.Models;
 
+using static System.Console;
+
 namespace EmployeeManagerDemo.Receivers
 {
     /// <summary>
@@ -37,20 +39,20 @@ namespace EmployeeManagerDemo.Receivers
         {
             foreach (var manager in _managers)
             {
-                Console.WriteLine($"Manager {manager.Id}, {manager.Name}");
+                WriteLine($"Manager {manager.Id}, {manager.Name}");
                 if (manager.Employees.Any())
                 {
                     foreach (var employee in manager.Employees)
                     {
-                        Console.WriteLine($"\t Employee {employee.Id}, {employee.Name}");
+                        WriteLine($"\t Employee {employee.Id}, {employee.Name}");
                     }
                 }
                 else
                 {
-                    Console.WriteLine($"\t No employees.");
+                    WriteLine($"\t No employees.");
                 }
             }
-            Console.WriteLine();
+            WriteLine();
         }
     }
 
