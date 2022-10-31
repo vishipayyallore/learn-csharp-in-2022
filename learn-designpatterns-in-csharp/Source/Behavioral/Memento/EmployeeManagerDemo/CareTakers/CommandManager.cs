@@ -9,6 +9,7 @@ namespace EmployeeManagerDemo.CareTakers
     public class CommandManager
     {
         private readonly Stack<AddEmployeeToManagerListMemento> _mementos = new();
+
         private AddEmployeeToManagerList? _command;
 
         public void Invoke(AddEmployeeToManagerList command)
@@ -16,10 +17,7 @@ namespace EmployeeManagerDemo.CareTakers
             // if the command has not been stored yet, store it - we will
             // reuse it instead of storing different instances
 
-            if (_command == null)
-            {
-                _command = command;
-            }
+            _command ??= command;
 
             if (command.CanExecute())
             {

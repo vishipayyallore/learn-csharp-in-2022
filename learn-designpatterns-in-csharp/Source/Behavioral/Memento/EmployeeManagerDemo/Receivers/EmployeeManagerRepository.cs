@@ -1,14 +1,18 @@
 ﻿using EmployeeManagerDemo.Models;
 
+using static System.Console;
+
 namespace EmployeeManagerDemo.Receivers
 {
+
     /// <summary>
     /// Receiver (implementation)
     /// </summary>
     public class EmployeeManagerRepository : IEmployeeManagerRepository
     {
+
         // for demo purposes, use an in-memory datastore as a fake "manager list"
-        private List<Manager> _managers = new List<Manager>()
+        private readonly List<Manager> _managers = new()
             { new Manager(1, "Katie"), new Manager(2, "Geoff") };
 
         public void AddEmployee(int managerId, Employee employee)
@@ -29,7 +33,6 @@ namespace EmployeeManagerDemo.Receivers
             return _managers.First(m => m.Id == managerId).Employees.Any(e => e.Id == employeeId);
         }
 
-
         /// <summary>
         /// For demo purposes, write out the data store to the console window
         /// </summary>
@@ -37,21 +40,22 @@ namespace EmployeeManagerDemo.Receivers
         {
             foreach (var manager in _managers)
             {
-                Console.WriteLine($"Manager {manager.Id}, {manager.Name}");
+                WriteLine($"Manager {manager.Id}, {manager.Name}");
                 if (manager.Employees.Any())
                 {
                     foreach (var employee in manager.Employees)
                     {
-                        Console.WriteLine($"\t Employee {employee.Id}, {employee.Name}");
+                        WriteLine($"\t Employee {employee.Id}, {employee.Name}");
                     }
                 }
                 else
                 {
-                    Console.WriteLine($"\t No employees.");
+                    WriteLine($"\t No employees.");
                 }
             }
-            Console.WriteLine();
+            WriteLine();
         }
+
     }
 
 }

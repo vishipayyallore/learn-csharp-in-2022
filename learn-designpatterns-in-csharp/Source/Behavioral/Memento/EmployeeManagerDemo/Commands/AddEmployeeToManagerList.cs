@@ -13,13 +13,12 @@ namespace EmployeeManagerDemo.Commands
         private int _managerId;
         private Employee? _employee;
 
-        public AddEmployeeToManagerList(
-            IEmployeeManagerRepository employeeManagerRepository,
-            int managerId,
-            Employee? employee)
+        public AddEmployeeToManagerList(IEmployeeManagerRepository employeeManagerRepository, int managerId, Employee? employee)
         {
-            _employeeManagerRepository = employeeManagerRepository;
+            _employeeManagerRepository = employeeManagerRepository ?? throw new ArgumentNullException(nameof(employeeManagerRepository));
+
             _managerId = managerId;
+
             _employee = employee;
         }
 
