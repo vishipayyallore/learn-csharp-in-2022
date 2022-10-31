@@ -1,4 +1,5 @@
 ﻿using EmployeeManagerDemo.Mementos;
+using EmployeeManagerDemo.Models;
 
 namespace EmployeeManagerDemo.Commands
 {
@@ -126,29 +127,6 @@ namespace EmployeeManagerDemo.Commands
                 _command?.RestoreMemento(_mementos.Pop());
                 _command?.Undo();
             }
-        }
-    }
-
-
-
-    public class Employee
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-
-        public Employee(int id, string name)
-        {
-            Id = id;
-            Name = name;
-        }
-    }
-
-    public class Manager : Employee
-    {
-        public List<Employee> Employees = new();
-        public Manager(int id, string name)
-            : base(id, name)
-        {
         }
     }
 
