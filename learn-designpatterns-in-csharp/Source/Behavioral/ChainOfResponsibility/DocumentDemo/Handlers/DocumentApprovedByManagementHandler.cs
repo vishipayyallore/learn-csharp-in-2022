@@ -15,10 +15,7 @@ namespace DocumentDemo.Handlers
             if (!document.ApprovedByManagement)
             {
                 // validation doesn't check out
-                throw new ValidationException(
-                    new ValidationResult(
-                        "Document must be approved by management",
-                        new List<string>() { "ApprovedByManagement" }), null, null);
+                throw new ValidationException(new ValidationResult("Document must be approved by management", new List<string>() { "ApprovedByManagement" }), null, null);
             }
 
             // go to the next handler
@@ -28,9 +25,9 @@ namespace DocumentDemo.Handlers
         public IHandler<Document> SetSuccessor(IHandler<Document> successor)
         {
             _successor = successor;
+
             return successor;
         }
     }
-
 
 }

@@ -15,10 +15,7 @@ namespace DocumentDemo.Handlers
             if (document.LastModified < DateTime.UtcNow.AddDays(-30))
             {
                 // validation doesn't check out
-                throw new ValidationException(
-                    new ValidationResult(
-                        "Document must be modified in the last 30 days",
-                        new List<string>() { "LastModified" }), null, null);
+                throw new ValidationException(new ValidationResult("Document must be modified in the last 30 days", new List<string>() { "LastModified" }), null, null);
             }
 
             // go to the next handler
