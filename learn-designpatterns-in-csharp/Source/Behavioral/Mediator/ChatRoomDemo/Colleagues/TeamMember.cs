@@ -1,5 +1,7 @@
 ﻿using ChatRoomDemo.Mediators;
 
+using static System.Console;
+
 namespace ChatRoomDemo.Colleagues
 {
     /// <summary>
@@ -38,7 +40,7 @@ namespace ChatRoomDemo.Colleagues
 
         public virtual void Receive(string from, string message)
         {
-            Console.WriteLine($"message from {from} to {Name}: {message}");
+            WriteLine($"message from {from} to {Name}: {message}");
         }
     }
 

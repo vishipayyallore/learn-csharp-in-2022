@@ -1,4 +1,6 @@
-﻿namespace ChatRoomDemo.Colleagues
+﻿using static System.Console;
+
+namespace ChatRoomDemo.Colleagues
 {
     /// <summary>
     /// ConcreteColleague
@@ -11,7 +13,8 @@
 
         public override void Receive(string from, string message)
         {
-            Console.Write($"{nameof(AccountManager)} {Name} received: ");
+            Write($"{nameof(AccountManager)} {Name} received: ");
+
             base.Receive(from, message);
         }
     }
