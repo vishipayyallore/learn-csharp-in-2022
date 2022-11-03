@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using static System.Console;
+
+Title = "Design Pattern - Observer";
+
+ForegroundColor = ConsoleColor.Cyan;
+
+ResetColor();
+WriteLine("\n\nPress any key ...");
+ReadKey();
+
