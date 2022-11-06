@@ -1,4 +1,6 @@
-﻿namespace BankAccountDemo.Contexts
+﻿using BankAccountDemo.States;
+
+namespace BankAccountDemo.Contexts
 {
 
     /// <summary>
@@ -7,6 +9,7 @@
     public class BankAccount
     {
         public BankAccountState BankAccountState { get; set; }
+
         public decimal Balance { get { return BankAccountState.Balance; } }
 
         public BankAccount()
