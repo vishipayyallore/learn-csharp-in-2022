@@ -10,7 +10,7 @@
         public Person(string name, string country)
         {
             Name = name;
-            
+
             Country = country;
         }
     }
