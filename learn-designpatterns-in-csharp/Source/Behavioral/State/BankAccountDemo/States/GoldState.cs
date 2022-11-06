@@ -22,7 +22,7 @@ namespace BankAccountDemo.States
         public override void Deposit(decimal amount)
         {
             WriteLine($"In {GetType()}, depositing {amount} + 10% bonus: {amount / 10}");
-            
+
             Balance += amount + (amount / 10);
         }
 
@@ -32,10 +32,10 @@ namespace BankAccountDemo.States
         public override void Withdraw(decimal amount)
         {
             WriteLine($"In {GetType()}, withdrawing {amount} from {Balance}");
-            
+
             // change state to overdrawn when withdrawing results in less than zero
             Balance -= amount;
-            
+
             if (Balance < 1000 && Balance >= 0)
             {
                 // change state to regular

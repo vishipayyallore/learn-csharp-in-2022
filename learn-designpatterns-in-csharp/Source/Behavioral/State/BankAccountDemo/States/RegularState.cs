@@ -1,5 +1,7 @@
 ﻿using BankAccountDemo.Contexts;
 
+using static System.Console;
+
 namespace BankAccountDemo.States
 {
     /// <summary>
@@ -10,6 +12,7 @@ namespace BankAccountDemo.States
         public RegularState(decimal balance, BankAccount bankAccount)
         {
             Balance = balance;
+
             BankAccount = bankAccount;
         }
 
@@ -18,8 +21,10 @@ namespace BankAccountDemo.States
         /// </summary> 
         public override void Deposit(decimal amount)
         {
-            Console.WriteLine($"In {GetType()}, depositing {amount}");
+            WriteLine($"In {GetType()}, depositing {amount}");
+
             Balance += amount;
+
             if (Balance >= 1000)
             {
                 // change state to gold
@@ -32,9 +37,11 @@ namespace BankAccountDemo.States
         /// </summary> 
         public override void Withdraw(decimal amount)
         {
-            Console.WriteLine($"In {GetType()}, withdrawing {amount} from {Balance}");
+            WriteLine($"In {GetType()}, withdrawing {amount} from {Balance}");
+
             // change state to overdrawn when withdrawing results in less than zero
             Balance -= amount;
+
             if (Balance < 0)
             {
                 // change state to overdrawn
