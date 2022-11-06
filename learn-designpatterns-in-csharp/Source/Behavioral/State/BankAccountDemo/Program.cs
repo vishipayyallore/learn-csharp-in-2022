@@ -1,6 +1,6 @@
 ﻿using static System.Console;
 
-Title = "Design Pattern - Observer";
+Title = "Design Pattern - State";
 
 ForegroundColor = ConsoleColor.Cyan;
 
