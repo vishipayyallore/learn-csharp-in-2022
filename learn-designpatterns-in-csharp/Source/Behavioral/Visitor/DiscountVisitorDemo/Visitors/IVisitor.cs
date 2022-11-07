@@ -1,4 +1,6 @@
-﻿namespace DiscountVisitorDemo.Visitors
+﻿using DiscountVisitorDemo.Elements;
+
+namespace DiscountVisitorDemo.Visitors
 {
 
     /// <summary>
