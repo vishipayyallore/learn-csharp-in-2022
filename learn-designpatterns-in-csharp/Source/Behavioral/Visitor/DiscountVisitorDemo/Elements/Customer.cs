@@ -1,5 +1,7 @@
 ﻿using DiscountVisitorDemo.Visitors;
 
+using static System.Console;
+
 namespace DiscountVisitorDemo.Elements
 {
 
@@ -25,7 +27,7 @@ namespace DiscountVisitorDemo.Elements
         {
             visitor.VisitCustomer(this);
 
-            Console.WriteLine($"Visited {nameof(Customer)} {Name}, discount given: {Discount}");
+            WriteLine($"Visited {nameof(Customer)} {Name}, discount given: {Discount}");
         }
     }
 

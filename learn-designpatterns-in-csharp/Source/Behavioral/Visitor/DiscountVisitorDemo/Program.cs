@@ -22,7 +22,7 @@ DiscountVisitor discountVisitor = new();
 container.Accept(discountVisitor);
 
 // write out gathered amount
-Console.WriteLine($"Total discount: {discountVisitor.TotalDiscountGiven}");
+WriteLine($"Total discount: {discountVisitor.TotalDiscountGiven}");
 
 ResetColor();
 WriteLine("\n\nPress any key ...");
