@@ -9,6 +9,7 @@ namespace DiscountVisitorDemo.Visitors
     public interface IVisitor
     {
         void VisitCustomer(Customer customer);
+
         void VisitEmployee(Employee employee);
     }
 
