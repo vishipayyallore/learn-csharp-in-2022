@@ -10,7 +10,19 @@ namespace DiscountVisitorDemoV1.Visitors
     {
         public decimal TotalDiscountGiven { get; set; }
 
-        public void VisitCustomer(Customer customer)
+        public void Visit(IElement element)
+        {
+            if (element is Customer customer)
+            {
+                VisitCustomer(customer);
+            }
+            else if (element is Employee employee)
+            {
+                VisitEmployee(employee);
+            }
+        }
+
+        private void VisitCustomer(Customer customer)
         {
             // percentage of total amount
             var discount = customer.AmountOrdered / 10;
@@ -22,7 +34,7 @@ namespace DiscountVisitorDemoV1.Visitors
             TotalDiscountGiven += discount;
         }
 
-        public void VisitEmployee(Employee employee)
+        private void VisitEmployee(Employee employee)
         {
             // fixed value depending on the amount of years employed
             var discount = employee.YearsEmployed < 10 ? 100 : 200;

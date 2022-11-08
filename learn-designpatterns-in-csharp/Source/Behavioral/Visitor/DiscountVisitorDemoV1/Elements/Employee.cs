@@ -24,7 +24,7 @@ namespace DiscountVisitorDemoV1.Elements
 
         public void Accept(IVisitor visitor)
         {
-            visitor.VisitEmployee(this);
+            visitor.Visit(this);
 
             WriteLine($"Visited {nameof(Employee)} {Name}, discount given: {Discount}");
         }
