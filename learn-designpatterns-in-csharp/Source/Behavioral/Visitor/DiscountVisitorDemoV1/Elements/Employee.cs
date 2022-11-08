@@ -1,8 +1,7 @@
-﻿using DiscountVisitorDemo.Visitors;
-
+﻿using DiscountVisitorDemoV1.Visitors;
 using static System.Console;
 
-namespace DiscountVisitorDemo.Elements
+namespace DiscountVisitorDemoV1.Elements
 {
 
     /// <summary>

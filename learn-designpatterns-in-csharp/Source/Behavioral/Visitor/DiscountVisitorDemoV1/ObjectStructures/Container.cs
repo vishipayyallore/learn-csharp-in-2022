@@ -1,8 +1,7 @@
-﻿using DiscountVisitorDemo.Elements;
-using DiscountVisitorDemo.Visitors;
-using DiscountVisitorDemoV1.Elements;
+﻿using DiscountVisitorDemoV1.Elements;
+using DiscountVisitorDemoV1.Visitors;
 
-namespace DiscountVisitorDemo.ObjectStructures
+namespace DiscountVisitorDemoV1.ObjectStructures
 {
 
     /// <summary>

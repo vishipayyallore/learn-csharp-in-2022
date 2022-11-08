@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Elements\" />
+    <Folder Include="Visitors\" />
+    <Folder Include="ObjectStructures\" />
+  </ItemGroup>
+
 </Project>
