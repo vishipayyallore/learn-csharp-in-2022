@@ -10,7 +10,7 @@ namespace RomanExpressionDemoV1.AbstractExpressions
     {
         public abstract void Interpret(RomanContext value);
 
-        protected void InterpretValue(RomanContext value, int numberValue, string romanValue)
+        protected static void InterpretValue(RomanContext value, int numberValue, string romanValue)
         {
             while (value.Input - numberValue >= 0)
             {
