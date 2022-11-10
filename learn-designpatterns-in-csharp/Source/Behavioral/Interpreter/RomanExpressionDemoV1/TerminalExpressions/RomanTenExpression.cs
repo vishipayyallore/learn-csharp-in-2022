@@ -45,14 +45,14 @@ namespace RomanExpressionDemoV1.TerminalExpressions
             InterpretValue(value, 10, "X");
         }
 
-        private static void CalculateValue(RomanContext value, int numberValue, string romanValue)
-        {
-            while (value.Input - numberValue >= 0)
-            {
-                value.Output += romanValue;
-                value.Input -= numberValue;
-            }
-        }
+        //private static void CalculateValue(RomanContext value, int numberValue, string romanValue)
+        //{
+        //    while (value.Input - numberValue >= 0)
+        //    {
+        //        value.Output += romanValue;
+        //        value.Input -= numberValue;
+        //    }
+        //}
 
     }
 
