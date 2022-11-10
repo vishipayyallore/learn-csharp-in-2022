@@ -50,7 +50,7 @@ namespace RomanExpressionDemoV1.TerminalExpressions
             while (value.Input - numberValue >= 0)
             {
                 value.Output += romanValue;
-                value.Input -= 9;
+                value.Input -= numberValue;
             }
         }
     }
