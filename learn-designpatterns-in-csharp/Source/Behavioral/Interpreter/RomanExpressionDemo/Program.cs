@@ -19,21 +19,21 @@ foreach (var expression in expressions)
 {
     expression.Interpret(context);
 }
-WriteLine($"Translating Arabic numerals to Roman numerals: 5 = {context.Output}");
+WriteLine($"Translating English numerals to Roman numerals: 5 = {context.Output}");
 
 context = new RomanContext(81);
 foreach (var expression in expressions)
 {
     expression.Interpret(context);
 }
-WriteLine($"Translating Arabic numerals to Roman numerals: 81 = {context.Output}");
+WriteLine($"Translating English numerals to Roman numerals: 81 = {context.Output}");
 
 context = new RomanContext(733);
 foreach (var expression in expressions)
 {
     expression.Interpret(context);
 }
-WriteLine($"Translating Arabic numerals to Roman numerals: 733 = {context.Output}");
+WriteLine($"Translating English numerals to Roman numerals: 733 = {context.Output}");
 
 ResetColor();
 WriteLine("\n\nPress any key ...");

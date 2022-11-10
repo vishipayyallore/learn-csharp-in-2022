@@ -35,13 +35,13 @@ namespace RomanExpressionDemoV1.TerminalExpressions
             //    value.Input -= 100;
             //}
 
-            CalculateValue(value, 900, "CM");
+            InterpretValue(value, 900, "CM");
 
-            CalculateValue(value, 500, "D");
+            InterpretValue(value, 500, "D");
 
-            CalculateValue(value, 400, "CD");
+            InterpretValue(value, 400, "CD");
 
-            CalculateValue(value, 100, "C");
+            InterpretValue(value, 100, "C");
         }
 
         private static void CalculateValue(RomanContext value, int numberValue, string romanValue)

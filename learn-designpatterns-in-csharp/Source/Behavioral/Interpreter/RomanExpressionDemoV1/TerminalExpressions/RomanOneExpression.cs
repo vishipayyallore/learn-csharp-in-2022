@@ -35,13 +35,13 @@ namespace RomanExpressionDemoV1.TerminalExpressions
             //    value.Input -= 1;
             //}
 
-            CalculateValue(value, 9, "IX");
+            InterpretValue(value, 9, "IX");
 
-            CalculateValue(value, 5, "V");
-            
-            CalculateValue(value, 4, "IV");
-            
-            CalculateValue(value, 1, "I");
+            InterpretValue(value, 5, "V");
+
+            InterpretValue(value, 4, "IV");
+
+            InterpretValue(value, 1, "I");
 
         }
 
