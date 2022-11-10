@@ -1,7 +1,7 @@
-﻿using RomanExpressionDemo.Contexts;
-using RomanExpressionDemoV1.AbstractExpressions;
+﻿using RomanExpressionDemoV1.AbstractExpressions;
+using RomanExpressionDemoV1.Contexts;
 
-namespace RomanExpressionDemo.TerminalExpressions
+namespace RomanExpressionDemoV1.TerminalExpressions
 {
 
     /// <summary>
@@ -11,25 +11,25 @@ namespace RomanExpressionDemo.TerminalExpressions
     {
         public override void Interpret(RomanContext value)
         {
-            while ((value.Input - 9) >= 0)
+            while (value.Input - 9 >= 0)
             {
                 value.Output += "IX";
                 value.Input -= 9;
             }
 
-            while ((value.Input - 5) >= 0)
+            while (value.Input - 5 >= 0)
             {
                 value.Output += "V";
                 value.Input -= 5;
             }
 
-            while ((value.Input - 4) >= 0)
+            while (value.Input - 4 >= 0)
             {
                 value.Output += "IV";
                 value.Input -= 4;
             }
 
-            while ((value.Input - 1) >= 0)
+            while (value.Input - 1 >= 0)
             {
                 value.Output += "I";
                 value.Input -= 1;
