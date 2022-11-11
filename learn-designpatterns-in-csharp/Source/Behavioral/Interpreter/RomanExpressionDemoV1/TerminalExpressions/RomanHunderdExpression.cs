@@ -23,19 +23,3 @@ namespace RomanExpressionDemoV1.TerminalExpressions
     }
 
 }
-
-// 900 = CMr
-// 800 = DCCC
-// 700 = DCC
-// 600 = DC
-// 500 = D
-// 400 = CD
-// 300 = CCC
-// 200 = CC
-// 100 = C
-
-// simplified - each combination is reachable with substraction and these 4:
-// 900 = CM
-// 500 = D
-// 400 = CD
-// 100 = C
