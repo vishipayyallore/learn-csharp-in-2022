@@ -15,6 +15,7 @@ namespace RomanExpressionDemoV1.AbstractExpressions
             while (value.Input - numberValue >= 0)
             {
                 value.Output += romanValue;
+
                 value.Input -= numberValue;
             }
         }
